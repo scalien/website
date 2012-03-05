@@ -452,13 +452,11 @@ div.contact-form span.button a{
 
 div.landing-columns {
 	position:relative;
-	height:386px;
+	height:200px;
 }
 
 div.landing-columns img.icons {
-	position:absolute;
-	left:119px;
-	top:52px;
+	margin-top: 80px;
 }
 
 div.landing-columns div.col{
@@ -538,6 +536,7 @@ div.landing-columns div.col.num3 p.info {
   font-size: 15px;
   font-style: italic;
   padding: 14px 0 9px;
+  text-align: center;
 }
 
 div.landing-columns div.col.num3 p.sign {
@@ -546,6 +545,7 @@ div.landing-columns div.col.num3 p.sign {
   font-size: 14px;
   font-weight:bold;
   padding: 0;
+  text-align: center;
 }
 
 div.references {

@@ -146,7 +146,16 @@ div.inner-content div.column-container div.column {
 	float:left;
 	width:455px;
 	padding:10px;
+	padding-top: 0;
 	margin-right:5px;
+}
+
+div.inner-content div.column-container div.column.intro {
+  width: 940px;
+  padding:10px;
+  padding-bottom: 0;
+	margin-right:5px;
+	clear: both;	
 }
 
 div.inner-content div.column-container div.column.middle {
@@ -155,6 +164,10 @@ div.inner-content div.column-container div.column.middle {
 	padding:10px;
 	margin:auto;
 	text-align:center;
+}
+
+div.inner-content div.column-container div.column.middle p {
+	text-align: center;
 }
 
 div.inner-content div.download-wide {

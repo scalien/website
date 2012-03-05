@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/inner.css" />
     
     <script type="text/javascript" src="/assets/plugins/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery.hoverIntent.min.js"></script>
     <script type="text/javascript" src="/assets/js/common_func.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -52,7 +53,7 @@
                 <span class="mbr"></span>
                 <ul id="submenu-technology" class="submenu">
                   <li class="subitem"><a target="_self" href="/technology/">Overview</a></li>
-                  <li class="subitem"><a target="_self" href="/technology/paxos">Paxos</a></li>
+                  <li class="subitem"><a target="_self" href="/technology/paxos.html">Paxos</a></li>
                 </ul>
               </li>
               <li class="item">
@@ -69,9 +70,12 @@
     </div>
     <div class="inner-content">
       <div class="wrap">
-        <h2>Overview</h2>
-        <p>ScalienDB takes some of the best ideas and practices of modern distributed systems and combines them with the dependability and reliability of traditional relational databases.</p>
         <div class="column-container">
+          <div class="column intro">
+            <h2>Overview</h2>
+            <p>ScalienDB takes some of the best ideas and practices of modern distributed systems and combines them with the dependability and reliability of traditional relational databases.</p>
+            <img src="/assets/images/technology-overview.png" alt="" title="" width="900" style="margin: 0px auto;" />
+          </div>
           <div class="column">
             <h2>Distributed Aspects</h2>
             <p>In a distributed database like ScalienDB the most important design decision is the choice of replication algorithm. This choice then determines how the system reacts to certain edge cases, such as servers going offline. However, this choice also has implications on the system during normal operation.</p>
@@ -140,13 +144,7 @@
               </li>
               <li>
                 <a href="">Management Console</a>
-              </li>
-              <li>
-                <a href="">Geo-replication tools</a>
-              </li>
-              <li>
-                <a href="">Backup tools</a>
-              </li>
+              </li>              
             </ul>
             <ul class="footer-nav">
               <li>
@@ -165,10 +163,7 @@
               </li>
               <li>
                 <a href="">Paxos</a>
-              </li>
-              <li>
-                <a href="">Benchmarks</a>
-              </li>
+              </li>         
             </ul>
             <ul class="footer-nav">
               <li>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/inner.css" />
     
     <script type="text/javascript" src="/assets/plugins/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery.hoverIntent.min.js"></script>
     <script type="text/javascript" src="/assets/js/common_func.js"></script>
   </head>
   <body>
@@ -30,6 +31,10 @@
                 <span class="mbl"></span>
                 <a target="_self" href="/products/">Products</a>
                 <span class="mbr"></span>
+                <ul id="submenu-products" class="submenu">
+                  <li class="subitem"><a target="_self" href="/products/">ScalienDB</a></li>
+                  <li class="subitem"><a target="_self" href="/products/">Management Console</a></li>
+                </ul>
               </li>
               <li class="item ">
                 <span class="mbl"></span>
@@ -43,6 +48,10 @@
                 <span class="mbl"></span>
                 <a target="_self" href="/technology/">Technology</a>
                 <span class="mbr"></span>
+                <ul id="submenu-technology" class="submenu">
+                  <li class="subitem"><a target="_self" href="/technology/">Overview</a></li>
+                  <li class="subitem"><a target="_self" href="/technology/paxos.html">Paxos</a></li>
+                </ul>
               </li>
               <li class="item ">
                 <span class="mbl"></span>
@@ -201,12 +210,6 @@
               <li>
                 <a href="">Management Console</a>
               </li>
-              <li>
-                <a href="">Geo-replication tools</a>
-              </li>
-              <li>
-                <a href="">Backup tools</a>
-              </li>
             </ul>
             <ul class="footer-nav">
               <li>
@@ -226,9 +229,6 @@
               </li>
               <li>
                 <a href="">Paxos</a>
-              </li>
-              <li>
-                <a href="">Benchmarks</a>
               </li>
             </ul>
             <ul class="footer-nav">
