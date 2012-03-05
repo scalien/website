@@ -141,10 +141,16 @@ div.header div.menu nav > ul li span.mbr{
   position: absolute;
   width:219px;
   height:73px;
-  top: 80px;
-  left: -1px;
   padding-top: 18px;
   background: url('/assets/images/submenu-products.png') no-repeat left 2px;
+}
+#submenu-products {
+  top: 80px;
+  left: -1px;
+}
+#submenu-technology {
+  top: 80px;
+  left: 590px;
 }
 div.header div.menu nav > ul li.subitem a {
   float: none;

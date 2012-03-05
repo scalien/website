@@ -14,7 +14,6 @@
     
     <script type="text/javascript" src="/assets/plugins/jquery/jquery.js"></script>
     <script type="text/javascript" src="/assets/js/common_func.js"></script>
-
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,12 +29,16 @@
           </div>
           <nav id="mainmenu">
             <ul>
-              <li class="item ">
+              <li class="item">
                 <span class="mbl"></span>
                 <a target="_self" href="/products/">Products</a>
                 <span class="mbr"></span>
+                <ul id="submenu-products" class="submenu">
+                  <li class="subitem"><a target="_self" href="/products/">ScalienDB</a></li>
+                  <li class="subitem"><a target="_self" href="/products/">Management Console</a></li>
+                </ul>
               </li>
-              <li class="item ">
+              <li class="item">
                 <span class="mbl"></span>
                 <a target="_self" href="/services.html">Services</a>
                 <span class="mbr"></span>
@@ -43,10 +46,14 @@
               <li class="mid-separator">
                 &nbsp;
               </li>
-              <li class="item ">
+              <li class="item">
                 <span class="mbl"></span>
                 <a target="_self" href="/technology/">Technology</a>
                 <span class="mbr"></span>
+                <ul id="submenu-technology" class="submenu">
+                  <li class="subitem"><a target="_self" href="/technology/">Overview</a></li>
+                  <li class="subitem"><a target="_self" href="/technology/paxos">Paxos</a></li>
+                </ul>
               </li>
               <li class="item active">
                 <span class="mbl"></span>
