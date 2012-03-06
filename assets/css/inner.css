@@ -56,7 +56,7 @@ div.inner-content div.broken-line {
 	background: url('../images/content_broken_line.png') no-repeat;
 }
 
-div.inner-content h1, div.inner-content h2, div.inner-content h3 { 
+div.inner-content h1, div.inner-content h2, div.inner-content h3 {
 	color:#21282b;
 	font-family:Tahoma;
 	font-weight:bold;
@@ -407,6 +407,7 @@ table.services_tbl tr.free td.c1 {
 
 div.more_info {
 	width:630px;
+    height: 172px;
 	margin:auto;
 }
 
@@ -481,7 +482,7 @@ div.more_info div.callus h4 {
   padding: 0;
   position: absolute;
   top: 21px;
-	font-family:Tahoma;
+  font-family:Tahoma;
 }
 
 div.more_info div.callus span.info{
@@ -528,7 +529,7 @@ table.downloads_tbl th.hidden, table.downloads_tbl td.hidden {
 }
 
 table.downloads_tbl td.tech {
-	background-color:#303d40;
+	background-color:#f9b96d;
 	color:#ffffff;
 	border:1px solid #0c0e0e;
 	border-top:none;
@@ -585,13 +586,14 @@ div.table_note ul {
 div.table_note ul li {
   font-size: 14px;
   margin-bottom: 7px;
-	font-weight:bold;
+  font-weight:regular;
 }
 
 div.inner-content p.code{
 	border:1px solid #bfb697;
 	background-color:#fdebbc;
 	font-family:Courier;
+    font-size: 11px;
 	padding:10px;
 	margin-right:20px;
 }

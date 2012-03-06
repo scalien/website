@@ -68,7 +68,7 @@
       <div class="wrap">
         <h1 class="solo">Downloads</h1>
         
-        <p class="intro">ScalienDB is open-source software licensed under commercial and AGPL licenses. You can chose to download the <span class="hl">complete source</span> code or <span class="hl">executables</span>.</p>
+        <p class="intro">ScalienDB is open-source software licensed under commercial and AGPL licenses. You can chose to download the <span class="highlight">complete source</span> code or <span class="highlight">executables</span>.</p>
         
         
         <h2 style="text-align:center;">ScalienDB 2.2.6</h2>
@@ -103,10 +103,10 @@
         <div class="table_note">
           <p>Notes</p>
           <ul>
-            <li>The downloads include ScalienDB, web management console, drivers, sample configurations.</li>
-            <li>We recommend that you use 64-bit version of ScalienDB.</li>
+            <li>The downloads include ScalienDB, the <span class="highlight">Standard Management Console</span> and sample configurations.</li>
+            <li>We recommend that you <span class="highlight">use the 64-bit version</span> of ScalienDB.</li>
             <li>The source release also builds under OSX and includes XCode project files.</li>
-            <li>The source code is available on Github.</li>
+            <li>The source code is available on <a href="https://github.com/scalien/scaliendb">Github</a>.</li>
           </ul>
         </div>
         
@@ -160,120 +160,129 @@
         </table>
         
         <div class="table_note">
-          <p style="font-weight:normal;">The API documentation for the drivers is on the <a class="hl" href="">Documentation</a> page.</p>
+          <p>Notes</p>
+          <ul>
+            <li>The API documentation for the drivers is on the <a class="hl" href="https://github.com/scalien/scaliendb/wiki">Documentation</a> page.</li>
+            <li>We <span class="highlight">can accomodate other languages</span> in a matter of days upon request. Please email <a href="mailto:services@scalien.com">services@scalien.com</a></li>
+          </ul>
         </div>
-        
+                
         <div class="column-container">  
           <div class="column">
-            <h3>Building the source code</h3>
-            <p>On <strong>Linux</strong>, extract the download tarball or get the source from Github:</p>
+            <h3>Building</h3>
+            <p>On <strong>Linux</strong>, download and extract the zip file or <span class="highlight">get the source from Github</span>:</p>
             
-            <p class="code">$ git clone git://github.com/scalien/scaliendb.git scaliendb</p>
+            <p class="code">git clone git://github.com/scalien/scaliendb.git scaliendb</p>
             
-            <p>Then enter the source directory, and issue the following commands:</p>
+            <p>Then issue the following commands:</p>
             
             <p class="code">
-            $ cd scaliendb<br/>
-            $ make<br/>
-            $ make pythonlib  # optional<br/>
-            $ make javalib  # optional
+            cd scaliendb<br/>
+            make<br/>
+            make pythonlib  # optional<br/>
+            make javalib &nbsp # optional
             </p>
             
             <p>On <strong>Windows</strong>, use the supplied Visual Studio project files.</p>
           </div>
           
           <div class="column">
-            <h3>Development branch</h3>
-            <p>To download the latest development branch:</p>
+            <h3>Running</h3>
+            <p>Launch the server with a specified configuration file:
             
-            <p class="code">$ git clone git://github.com/scalien/scaliendb.git scaliendb</p>
+            <p class="code">./scaliendb test/control/single/scaliendb.conf</p>
+
+            <p>Once the server is up running, connect to <strong>http://localhost:8080/webadmin</strong> to see the Standard Management Console.</p>
             
-            <p>Once the server is up running, connect to <strong>http://localhost:8080/webadmin</strong> to see the Web Management Console.</p>
-            
-            <p>Don't forget to check out the <a class="hl" href="">documentation</a>.</p>
+            <p>Don't forget to check out the <a class="hl" href="https://github.com/scalien/scaliendb/wiki">Documentation</a>.</p>
           </div>
           
           <div class="clear"></div>
         </div>
       </div>
-    </div>
-        <div class="footer">
-      <div class="wrap">
-        <div class="column-container">
-          <div class="prod">
-            <h5>Products</h5>
-            
-            <ul class="footer-nav upper">
-              <li>
-                <a href="">ScalienDB</a>
-              </li>
-              <li>
-                <a href="">Management Console</a>
-              </li>
-            </ul>
-            <ul class="footer-nav">
-              <li>
-                <a href="">Services & Fees</a>
-              </li>
-              <li>
-                <a href="">Customers</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tech">
-            <h5>Technology</h5>
-            
-            <ul class="footer-nav upper">
-              <li>
-                <a href="">Overview</a>
-              </li>
-              <li>
-                <a href="">Paxos</a>
-              </li>
-            </ul>
-            <ul class="footer-nav">
-              <li>
-                <a href="">Documentation</a>
-              </li>
-              <li>
-                <a href="">Company</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social">
-            <h5>Get social</h5>
-            <div class="icons">
-              <a href=""><img src="assets/images/social_tw.png" alt=""/></a>
-              <a href=""><img src="assets/images/social_fb.png" alt=""/></a>
-              <a href=""><img src="assets/images/social_bl.png" alt=""/></a>
-            </div>
-          </div>
-          <div class="contact">
-            <h5>Contact</h5>
-            <!-- Contact form TODO-->
-            <form>
-              <div class="contact-form">
-                <div class="col-left">
-                  <input type="text" placeholder="Name"/>
-                  <input type="text" placeholder="E-mail"/>
-                </div>
-                <div class="col-right">
-                  <textarea placeholder="Message"></textarea>
-                  <span class="button">
-                    <span class="mbl"></span>
-                      <a target="_self" href="">Send</a>
-                    <span class="mbr"></span>
-                  </span>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </form>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="broken-line">
-        </div>
-        <p class="copyright">Copyright &copy; 2012 Scalien. All rights reserved</p>
+      
+          <div class="footer">
+			<div class="wrap">
+				<div class="column-container">
+					<div class="prod">
+						<h5>Products</h5>
+						<ul class="footer-nav upper">
+							<li>
+								<a href="products/index.html">ScalienDB</a>
+							</li>
+                            <li>
+								<a href="downloads.html">Downloads</a>
+							</li>
+                            <li>
+								<a href="https://github.com/scalien/scaliendb/wiki">Documentation</a>
+							</li>
+						</ul>
+                        <h5>Services</h5>
+						<ul class="footer-nav">
+							<li>
+								<a href="services.html">Services</a>
+							</li>
+							<li>
+								<a href="fees.html">Support Fees</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tech">
+						<h5>Technology</h5>						
+						<ul class="footer-nav upper">
+							<li>
+								<a href="technology/index.html">Overview</a>
+							</li>
+							<li>
+								<a href="technology/paxos.html">Paxos</a>
+							</li>
+						</ul>
+                        <h5>Company</h5>
+						<ul class="footer-nav">
+							<li>
+								<a href="company.html">About</a>
+							</li>
+						</ul>
+					</div>
+                    
+					<div class="social">
+						<h5>Get social</h5>
+						<div class="icons">
+							<a href=""><img src="assets/images/social_tw.png" alt=""/></a>
+							<a href=""><img src="assets/images/social_fb.png" alt=""/></a>
+							<a href=""><img src="assets/images/social_bl.png" alt=""/></a>
+						</div>
+					</div>
+                    
+					<div class="contact">
+						<h5>Contact</h5>
+						<!-- Contact form TODO-->
+						<form>
+							<div class="contact-form">
+								<div class="col-left">
+									<input type="text" placeholder="Name"/>
+									<input type="text" placeholder="E-mail"/>
+								</div>
+								<div class="col-right">
+									<textarea placeholder="Message"></textarea>
+									<span class="button">
+										<span class="mbl"></span>
+											<a target="_self" href="">Send</a>
+										<span class="mbr"></span>
+									</span>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="broken-line">
+				</div>
+				<p class="copyright">Copyright &copy; 2012 Scalien. All rights reserved</p>
       </div>
-    </div>  </body>
+    </div>
+      
+    </div>
+   </body>
 </html>

@@ -277,6 +277,7 @@ div.inner-content {
 }
 
 div.footer {
+    clear:both;
 	height:402px;
 	background: url('../images/footer_bg.png') repeat-x top left;
 }
