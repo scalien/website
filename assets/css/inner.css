@@ -595,3 +595,7 @@ div.inner-content p.code{
 	padding:10px;
 	margin-right:20px;
 }
+
+span.highlight {
+    background-color: #fce39f;
+}
