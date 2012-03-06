@@ -274,17 +274,16 @@ div.header > div.wrap div.download-splash a {
 }
 
 div.inner-content {
-	padding-bottom:130px;
 }
 
 div.footer {
-	height:452px;
+	height:402px;
 	background: url('../images/footer_bg.png') repeat-x top left;
 }
 
 div.footer > div.wrap {
 	width:960px;
-	height:452px;
+	height:402px;
 	margin:auto;
 	position:relative;
 }
@@ -302,7 +301,7 @@ div.footer ul.footer-nav {
 }
 
 div.footer ul.footer-nav.upper {
-	height:106px;
+	height:76px;
 }
 
 div.footer ul.footer-nav li {
