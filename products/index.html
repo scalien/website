@@ -74,46 +74,33 @@
       <div class="wrap">
         <h1>What is ScalienDB?</h1>
         
-        <p class="intro">ScalienDB is an enterprise class, open source database for new, high-volume web applications. 
-        ScalienDB was designed from the ground up to be a replicated, <br/>
-        scalable, and highly reliable primary database for enterprise data<br/> management use-cases.</p>
+        <p class="intro">ScalienDB unites the strengths of SQL databases with the strengths of NoSQL databases. ScalienDB is designed from the ground up to be a highly available and scalable Transactional NoSQL database.</p>
         
-        <p class="hl">ScalienDB is designed for 3-way replication (or more) to ensure high availability in the datacenter.  We focus on operational ease-of-use, such as majority failover. This means two of three servers can go down and ScalienDB keeps going without any hiccups or loss in performance; i.e. no need to wake the ops team.</p>
+        <p class="hl">ScalienDB is available for free under an open source license. We also offer Enterprise services such as Commercial Licenses, Support and Proof of Concepts. Please see our <a href="services.html">Services page</a></p>
         
-        <p class="hl">Unlike other NoSQL databases, ScalienDB is built to be a transactional database that utilizes Immediately Consistent replication. This means ScalienDB respects your data and will not ever return stale or inconsistent records. Unlike other NoSQL databases that employ Eventual Consistency, you never have to “repair” or resolve “conflicts” in your ScalienDB database.</p>
-        
-        <p class="hl">As ScalienDB is scalable you can add more servers to support more of your customer’s data, traffic and load. For scalability, ScalienDB divides data into shards and moves these onto new servers as they are added.</p>
-        
-        <p class="hl">The requirements of most enterprise clients leave no room for inferior technology.  Designed from the bottom up to for the enterprise ScalienDB offers the following features. </p>
-        
-        <h2 class="center">Benefits</h2>
+        <h2 class="center">Here's a look at the key features of ScalienDB and how they benefit you.</h2>
         
         <!-- <div class="broken-line"></div> -->
         
         <div class="column-container">
           <div class="column">
             <h3>Transactions</h3>
-            <p>ScalienDB proves that transactions make just as much sense for a NoSQL database as a traditional SQL database. Transactional properties are codified in the ACID acronym:</p>
-            <dl>
-              <dt>Atomicity</dt><dd>either all commands in a transaction are executed or none are.</dd>
-              <dt>Consistency</dt><dd>(logical, not to be confused with consistency in replication) - transactions cannot break pre-defined logical consistency rules. This type of consistency does not apply to key-value NoSQL databases.</dd>
-              <dt>Isolation</dt><dd>transactions do not see partial writes from other concurrent transactions.</dd>
-              <dt>Durability</dt><dd>once committed, transactions stay committed.</dd>
-            </ul>
+            <p>ScalienDB in the only open source NoSQL database to support transactions and hence is a “system of record” primary database. Unlike with other NoSQL databases, using ScalienDB there is no need to worry about data loss, data integrity or consistency.</p>
+
+            <h3>Immediate Consistency</h3>
+            <p>ScalienDB uses the Paxos algorithm for replication. This means that ScalienDB is <em>immediately consistent</em> unlike other NoSQL databases that are only <em>eventually consistent</em>.</p>
+
+            <h3>Scalable</h3>
+            <p>ScalienDB is a horizontally scalable distributed database. To store more data you add more servers instead of buying bigger, more expensive mainframe-like servers. ScalienDB supports both read scalability and write scalability, without sacrificing strong transactional semantics.</p>
             
-            <h3>Scalability</h3>
-            <p>Scalability is the ability to grow the database as more customers use your web application. It allows you to:</p>
-            <ul>
-              <li>Add servers to increase storage capacity</li>
-              <li>Add servers to handle increased web traffic</li>
-              <li>Add servers to handle increased load</li>
-            </ul>
-            
-            <h3>Data integrity</h3>
-            <p>Data integrity is the result of Consistency in replication and the use of Transactions. It’s the guarantee that data will be returned in its entirety, as written by the last transaction, without interference from other transactions, as expected by the application programmer.</p>
-            
-            <h3>Majority failover</h3>
-            <p>Majority failover means two out of three servers can fail in a replica set without affecting the availability or performance of ScalienDB. The benefit is reduced operational risk and no late-night emergencies when a server goes offline because of a bad disk, a bad power supply or network equipment failure.</p>
+            <h3>No Single Point of Failure</h3>
+            <p>ScalienDB is a replicated database without a single point of failure. Customers can chose to run at 3x, 5x or higher replication factors for increased reliability. Unlike other NoSQL databases, ScalienDB can tolerate failures up to a single remaining data server. This reduces operational headaches because the ops team doesn't have to be alerted for single failures.</p>
+
+            <h3>Schemaless</h3>
+            <p>ScalienDB is a schemaless key-value database with high control over data layout. For example, the customer can chose to compress data to trade speed for space. This gives maximum flexibility and fits in nicely with continuous integration and agile methodologies.</p>
+
+            <h3>No downtime migration</h3>
+            <p>Changing schema is not free even in a NoSQL database, as data has to be transformed from the old representation to the new one. But in a key-value NoSQL database like ScalienDB this can be performed on a user-by-user basis, on-demand, without downtime.</p>
 
           </div>
           <div class="column">
