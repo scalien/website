@@ -1,3 +1,6 @@
+.column.middle a:hover {
+	color: #15798B;;
+}
 
 div.header.inner-page {
 	height:160px;
@@ -66,7 +69,7 @@ div.inner-content h1 {
 }
 
 div.inner-content h1.solo{
-	padding:45px 0px;
+	padding:35px 0px 20px 0px;
 }
 
 div.inner-content h2{
@@ -297,7 +300,7 @@ table.services_tbl th.c5 {
 }
 
 table.services_tbl td {
-	padding: 9px 0px;
+	padding: 3px 0px;
 	text-align:center;
 	font-family:Tahoma;
 	font-size:17px;
@@ -350,7 +353,7 @@ table.services_tbl td.c5 {
 table.services_tbl tr.fees td {
 	font-weight:bold;
 	border-top:none;
-	padding: 26px 0px;
+	padding: 20px 0px;
 	font-family:Tahoma;
 }
 
@@ -392,6 +395,14 @@ table.services_tbl tr.fees td.c5 {
 	color:#ffffff;
 	border-bottom:1px solid #7fa996;
 	font-size:24px;
+}
+
+table.services_tbl tr.free td {
+	padding: 10px 0;
+}
+table.services_tbl tr.free td.c1 {
+	text-align:left;
+	padding-left:20px;
 }
 
 div.more_info {

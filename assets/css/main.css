@@ -5,6 +5,12 @@
 	padding:0;
 }
 
+a {
+  color: #10596B;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 a img {
   border: none;
 }
