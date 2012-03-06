@@ -148,7 +148,7 @@ div.header div.menu nav > ul li span.mbr{
   width:219px;
   height:73px;
   padding-top: 18px;
-  background: url('/assets/images/submenu-products.png') no-repeat left 2px;
+  background: url('../images/submenu-products.png') no-repeat left 2px;
 }
 #submenu-products {
   top: 80px;
