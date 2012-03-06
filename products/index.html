@@ -92,7 +92,8 @@
 
             <h3>Scalable</h3>
             <p>ScalienDB is a horizontally scalable distributed database. To store more data you add more servers instead of buying bigger, more expensive mainframe-like servers. ScalienDB supports both read scalability and write scalability, without sacrificing strong transactional semantics.</p>
-            
+          </div>
+          <div class="column">
             <h3>No Single Point of Failure</h3>
             <p>ScalienDB is a replicated database without a single point of failure. Customers can chose to run at 3x, 5x or higher replication factors for increased reliability. Unlike other NoSQL databases, ScalienDB can tolerate failures up to a single remaining data server. This reduces operational headaches because the ops team doesn't have to be alerted for single failures.</p>
 
@@ -101,30 +102,6 @@
 
             <h3>No downtime migration</h3>
             <p>Changing schema is not free even in a NoSQL database, as data has to be transformed from the old representation to the new one. But in a key-value NoSQL database like ScalienDB this can be performed on a user-by-user basis, on-demand, without downtime.</p>
-
-          </div>
-          <div class="column">
-            <h3>Replication</h3>
-            
-            <p>Replication has become a must-have requirement for databases serving customer-facing web applications. With replication, you have multiple copies of the database stored and maintained, assuring:</p>
-            <ul>
-              <li>No data loss in case of disk failure</li>
-              <li>No downtime in case of server failure</li>
-              <li>Decreased reliance on backups</li>
-            </ul>
-            <p>Some applications also require geo-replication. Geo-replication will be present in the next ScalienDB major release.</p>
-            
-            <h3>Consistency</h3>
-            <p>Most other NoSQL databases operate under the premise that high-availability and performance requires Eventual Consistency in replication. Eventual Consistency means that under certain conditions, the database will return stale or inconsistent data.</p>
-            
-            <p>ScalienDB proves that Eventual Consistency is not required for availability and performance. ScalienDB does not use Eventual Consistency, while maintaining superior failover properties and being at the top of the pack in terms of performance.
-            <br/>ScalienDB achieves this by the pioneering use of the Paxos algorithm for replication.</p>
-            
-            <h3>Performance</h3>
-            <p>ScalienDB has been architected from the beginning to be a high-performance distributed database. It is written in C++ and runs as a native 64-bit application on both Windows and Linux. Additionally, ScalienDB uses an asynchronous, event-based, 
-            non-blocking server architecture that assures optimal CPU efficiency and the ability to handle tens of thousands of clients (Windows: IOCP, Linux: Epoll). Unlike other NoSQL databases, 
-            ScalienDB can handle a very large number of client connections without eating up your server’s CPU load on either the server or client side.</p>
-            
           </div>
           <div class="clear"></div>
         </div>

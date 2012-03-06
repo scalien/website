@@ -570,3 +570,8 @@ div.references img{
 div.references img.last{
 	margin-right:0px;
 }
+
+#submenu-products {
+  display: none !important;
+  visibility: hidden !important;
+}
