@@ -45,7 +45,7 @@ div.header {
 
 div.header > div.wrap {
 	width:960px;
-	height:495px;
+	height:350px;
 	margin:auto;
 	position:relative;
 	background: url('../images/header_bg.png') no-repeat left -120px;
