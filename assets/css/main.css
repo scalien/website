@@ -11,6 +11,11 @@ a {
   font-weight: bold;
 }
 
+span.hl {
+    color: #10596B;
+    font-weight: bold;
+}
+
 a img {
   border: none;
 }
