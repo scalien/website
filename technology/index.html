@@ -101,15 +101,15 @@
             <h2>Controllers</h2>
             <p>
             The <span class="highlight">Controllers act as the brain</span> of the ScalienDB cluster and communicate among themselves to ensure the fault-tolerance and high-availability of the entire distributed database system.
-            Shard Servers and their membership in quorums are managed by the Controllers.
+            Shard Servers and their membership in Replication Sets are managed by the Controllers.
             Internally, the controller nodes use the Paxos protocol to guarantee that the ScalienDB cluster is always in a well-defined, consistent state without the possibility of a split-brain scenario.
             The controllers handle the following functionality:
             </p>
             <ul>
               <li>Store the database schema (databases, tables)</li>
               <li>Manage membership of shard servers</li>
-              <li>Assign shard servers into quorums for replication</li>
-              <li>Migrate shards across quorums</li>
+              <li>Assign Shard servers into Replication Sets for replication</li>
+              <li>Migrate shards across Replication Sets</li>
             </ul>
             <p>
             You can use one, three, five or more Controllers in the ScalienDB setup depending on the level of fault-tolerance desired.
@@ -157,8 +157,8 @@
               <li>Monitoring catchup and shard migration progress</li>
               <li>Create, rename, delete databases</li>
               <li>Create, rename, delete, truncate tables</li>
-              <li>Create, delete quorums</li>
-              <li>Add, remove data nodes from quorums</li>
+              <li>Create, delete Replication Sets</li>
+              <li>Add, remove Shard Servers from Replication Sets</li>
               <li>Shard splitting and shard migration</li>
             </ul>
             <p>
