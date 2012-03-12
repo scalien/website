@@ -82,11 +82,13 @@
           <div class="column">
             <h2>Distributed Database</h2>
             <p>
-            ScalienDB uses <span class="highlight">Paxos</span> to replicate data. See the <a href="technology/paxos">Paxos</a> page for more.
+            There are two key aspects to distributed databases. The first is reliable data replication, the second is scalability.
             </p>
             <p>
-            Next to replication, the other crucial ingredient of distributed databases is Scalability. ScalienDB uses <span class="highlight">Horizontal Scalability</span>.
-            This means you can add <span class="highlight">commodity servers</span> to:
+            To assure a SQL level of data integrity ScalienDB uses <a href="technology/paxos">Paxos</a> to replicate data. 
+            </p>
+            <p>
+            With respect to scalability, ScalienDB uses Horizontal Scalability. This means you can add commodity servers to::
             </p>
             <ul>
               <li>Increase storage space</li>
@@ -95,7 +97,7 @@
             </ul>
             <p>
             ScalienDB supports all three scalability criteria by the addition of any number of Shard Servers on the fly.
-            Data is split into shards and then distributed between Shard Servers transparently, maintaining the appearance of a single database to the outside.
+            Data is split into shards and then distributed between Shard Servers transparently, maintaining the appearance of a single database.
             </p>
 
             <h2>Controllers</h2>
