@@ -1,6 +1,16 @@
 
 $(document).ready(function() {
 	init_menu();
+  var options = {
+    success:  showResponse  // post-submit callback 
+  }; 
+
+  // bind form using 'ajaxForm' 
+  $('.contact form').ajaxForm(options); 
+
+  $('.contact form a').click(function() {
+    $('.contact form').submit();
+  });
 }); 
 
 var menuSlideUp = function() {
@@ -31,4 +41,10 @@ function init_menu()
      out: menuSlideUp 
   };
 	$('nav#mainmenu li.item').hoverIntent(config);
+}
+
+function showResponse(responseText, statusText, xhr, $form) {
+  if(responseText!="Sent") {
+    alert(responseText);
+  }
 }
