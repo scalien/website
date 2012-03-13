@@ -150,6 +150,7 @@ div.header div.menu nav > ul li span.mbr{
 .submenu {
   display: none;
   position: absolute;
+  z-index: 10;
   width:219px;
   padding-top: 18px;
 }
