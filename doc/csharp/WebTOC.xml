@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="2000a0fe-f9e2-4dd3-a0ed-0e1cf56ca3db" Title="Scalien Namespace" Url="html/0ef38bc2-351a-08a1-4269-904581e21217.htm">
+    <HelpTOCNode Id="edb76668-31e0-4b6e-bbf5-f18b2345ba3e" Title="ByteRangeParams Class" Url="html/4e02c15e-72c9-0e09-3752-d937e0df7360.htm">
+      <HelpTOCNode Title="ByteRangeParams Members" Url="html/24986431-e0c5-4edf-2b2b-220b27f9ccad.htm" />
+      <HelpTOCNode Title="ByteRangeParams Constructor " Url="html/48dce83e-e81e-5be0-e80f-91bf4e851cbf.htm" />
+      <HelpTOCNode Id="015a38b4-4610-4ed5-abb8-c23d41b102d8" Title="ByteRangeParams Methods" Url="html/bb1f265e-6f14-c245-535d-04d9b04f3c94.htm">
+        <HelpTOCNode Title="Count Method " Url="html/385f0769-bdbd-7a17-6878-150ac5305d4b.htm" />
+        <HelpTOCNode Title="EndKey Method " Url="html/36964299-80c7-40e4-90c5-402905a4a1f1.htm" />
+        <HelpTOCNode Title="Prefix Method " Url="html/6db72ae0-c872-568c-9136-bc73b41c3f50.htm" />
+        <HelpTOCNode Title="StartKey Method " Url="html/5d8b67f5-c97e-c3fc-091c-eaddef20bb78.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="62c4ae24-4feb-4e9c-adec-09b6f49c82d8" Title="Client Class" Url="html/f65479d8-1563-7ce6-6142-d3ce8c64b418.htm">
+      <HelpTOCNode Title="Client Members" Url="html/ff5b1185-b992-0eb0-34b9-0c38efdbc00b.htm" />
+      <HelpTOCNode Title="Client Constructor " Url="html/338c3de3-db8b-6333-6a31-bee2a657f1b6.htm" />
+      <HelpTOCNode Id="1cb3b460-1cfd-4095-9aa0-5fd418487ece" Title="Client Fields" Url="html/2a218d50-351e-ee0d-0444-7490e17c1309.htm">
+        <HelpTOCNode Title="BATCH_DEFAULT Field" Url="html/16d73565-5442-956c-2f66-2d6f72c7583e.htm" />
+        <HelpTOCNode Title="BATCH_NOAUTOSUBMIT Field" Url="html/ffeb0909-adf4-84b3-bc7f-519269b7af32.htm" />
+        <HelpTOCNode Title="BATCH_SINGLE Field" Url="html/adac72bd-7a98-2e59-d259-b69845b297b2.htm" />
+        <HelpTOCNode Title="CONSISTENCY_ANY Field" Url="html/2f3e404e-f962-f7e7-15ff-c6a10d06bc13.htm" />
+        <HelpTOCNode Title="CONSISTENCY_RYW Field" Url="html/6df2823a-2c72-208c-4062-d9e8a2b3b8f7.htm" />
+        <HelpTOCNode Title="CONSISTENCY_STRICT Field" Url="html/c2e88fa2-3d60-deb3-b99e-d40199d50133.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7df94fa2-e92f-442b-b87f-9d8ca03ef6c1" Title="Client Methods" Url="html/042d0c8c-7b3b-4bd7-9c1f-ab49cf64612c.htm">
+        <HelpTOCNode Title="Begin Method " Url="html/7a7e2b43-0eef-3cb2-ddd3-04302e6c8f13.htm" />
+        <HelpTOCNode Title="CreateDatabase Method " Url="html/d1a23f2c-5862-59f2-8a41-b478b3e9faed.htm" />
+        <HelpTOCNode Title="GetDatabase Method " Url="html/dcbf3b16-a18b-0616-e94a-ea6a24b5dae2.htm" />
+        <HelpTOCNode Title="GetDatabases Method " Url="html/de93ec32-9d47-bd6e-df34-1ce0a6e0bc86.htm" />
+        <HelpTOCNode Title="GetGlobalTimeout Method " Url="html/c9c0ffe5-f908-0c5a-133b-882882f466cb.htm" />
+        <HelpTOCNode Title="GetMasterTimeout Method " Url="html/e873694d-7ab1-771d-5684-2b8f1d6a7761.htm" />
+        <HelpTOCNode Title="GetQuorum Method " Url="html/a0805fb4-cca4-b80a-837d-03f790ca3816.htm" />
+        <HelpTOCNode Title="GetQuorums Method " Url="html/8f218aba-0d57-9891-fe93-a8c3e127efdf.htm" />
+        <HelpTOCNode Title="Rollback Method " Url="html/309d63b0-68cd-e477-653a-c460c3552206.htm" />
+        <HelpTOCNode Title="SetBatchLimit Method " Url="html/ee954f2d-f526-f679-cf7d-9bb434c7bd3d.htm" />
+        <HelpTOCNode Title="SetBatchMode Method " Url="html/8f76cb9f-e790-9e10-e071-92d80c474fb8.htm" />
+        <HelpTOCNode Title="SetConsistencyMode Method " Url="html/5e1fdbf2-047c-9b3e-2a9e-73fb688443e9.htm" />
+        <HelpTOCNode Title="SetGlobalTimeout Method " Url="html/22e0bc39-b418-4211-c07a-ecace99920a4.htm" />
+        <HelpTOCNode Title="SetMasterTimeout Method " Url="html/251becaa-1fb6-d3a6-eae4-93c271be0feb.htm" />
+        <HelpTOCNode Title="SetTrace Method " Url="html/d7639926-3f35-9ea8-b3a5-f05fbf8641c9.htm" />
+        <HelpTOCNode Title="Submit Method " Url="html/15a4d36d-2fbb-f1fd-1de7-fd9d09691e4b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a66d21de-d1af-457c-96de-d3e9eb1f7947" Title="Database Class" Url="html/96eeb85b-14d6-d2a2-d1e9-39768d3bf8d6.htm">
+      <HelpTOCNode Title="Database Members" Url="html/3ade9989-3af6-a453-192d-4281a86da598.htm" />
+      <HelpTOCNode Id="a6356490-bea4-43c7-b1b0-447506b19798" Title="Database Methods" Url="html/a9894c0c-a21d-347e-f9b4-906fff778ee0.htm">
+        <HelpTOCNode Id="041588e6-59d5-4792-beb4-2b7a55ec1eca" Title="CreateTable Method " Url="html/ed24a88a-3d24-297b-7023-a384c1170b0e.htm">
+          <HelpTOCNode Title="CreateTable Method (String)" Url="html/f63b5a2b-d197-7d91-37cf-5de59ed94b97.htm" />
+          <HelpTOCNode Title="CreateTable Method (String, Quorum)" Url="html/a0c20bae-0a69-d2a1-a702-dcbc00c85592.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DeleteDatabase Method " Url="html/a477132a-e842-ae8e-afca-ab353fdfd785.htm" />
+        <HelpTOCNode Title="GetTable Method " Url="html/dcbbbf2c-91b8-17e6-91b3-4e7eff2c04e7.htm" />
+        <HelpTOCNode Title="GetTables Method " Url="html/14057e7c-44e7-7188-1db4-c17f401df980.htm" />
+        <HelpTOCNode Title="RenameDatabase Method " Url="html/53605781-f30e-e0c6-add7-345686d36673.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6b691f90-0617-44e4-8e3b-ae741a83d85c" Title="Database Properties" Url="html/a98bc9c2-171c-89b4-e8fc-a29a3b9d5601.htm">
+        <HelpTOCNode Title="Name Property " Url="html/f3b6895f-dced-b0dd-dcdd-394eb8df84ae.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ba3781e8-cf5d-4c90-921f-9add0f6614e6" Title="Quorum Class" Url="html/477d4f60-8afe-2c50-f7b5-b0e6e8055f74.htm">
+      <HelpTOCNode Title="Quorum Members" Url="html/a9c5901e-3a26-a857-87f6-43b1540f05f2.htm" />
+      <HelpTOCNode Id="fbab3e6c-217d-4c27-a549-ad7e22ffb377" Title="Quorum Properties" Url="html/0fdf4ce0-11dd-e5ab-9707-5ffb77ecb4aa.htm">
+        <HelpTOCNode Title="Name Property " Url="html/7e359fbe-5552-6ab1-ba63-9aade6a7eb48.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f4448fce-63f6-4765-9136-94e46428fc5e" Title="SDBPException Class" Url="html/7fb1c98d-e56d-9932-75c6-adcb16ca88ff.htm">
+      <HelpTOCNode Title="SDBPException Members" Url="html/96be6bee-1d42-3c74-733e-7f89b4eb389a.htm" />
+      <HelpTOCNode Id="e2f71ef5-cdf8-4e30-9521-d35667b8ec3e" Title="SDBPException Properties" Url="html/d6362eaa-e8cf-6759-9a55-bfab934ba1ba.htm">
+        <HelpTOCNode Title="Status Property " Url="html/28a6f805-7a8e-9ef5-295f-49c0915b91d3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="da672cfe-92a0-42d6-af7e-656bd1122888" Title="Sequence Class" Url="html/40265165-8800-4e63-9530-9c6f979220ba.htm">
+      <HelpTOCNode Title="Sequence Members" Url="html/ac8e2380-5c19-24c0-50d8-84094398652d.htm" />
+      <HelpTOCNode Id="34943683-5df3-4ab7-855c-ef37f185b43a" Title="Sequence Methods" Url="html/fcc14aff-d9d2-fda7-f930-15001f8d3e55.htm">
+        <HelpTOCNode Title="Reset Method " Url="html/34bd505b-a23f-8f32-d899-c2d37f0582a7.htm" />
+        <HelpTOCNode Title="SetGranularity Method " Url="html/230590d0-2e8e-d262-48d3-af276b7481dc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="61245b28-7e82-447a-8ccd-7452aefda4db" Title="Sequence Properties" Url="html/3711c0a0-e11f-41fe-d701-36123d787289.htm">
+        <HelpTOCNode Title="GetNext Property " Url="html/ce3fbaeb-70b5-a3ad-f262-3809f1527ad5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a6ffee73-1378-4cba-93b9-4fe138f80ff7" Title="Status Class" Url="html/c476b235-1576-02d0-a71c-a6903fd2da3e.htm">
+      <HelpTOCNode Title="Status Members" Url="html/9180ecfd-46e2-8d1a-5c09-94cdcb44da15.htm" />
+      <HelpTOCNode Title="Status Constructor " Url="html/aabb30c2-4ef0-c2b5-0dfc-e26f4a2f8292.htm" />
+      <HelpTOCNode Id="759b0776-d468-47c8-943c-e15adf98cb41" Title="Status Fields" Url="html/f47aa04a-4738-2774-08cd-1d028d5020e6.htm">
+        <HelpTOCNode Title="SDBP_API_ERROR Field" Url="html/b4c03aff-2ca9-ab3d-1f95-bb230645db2b.htm" />
+        <HelpTOCNode Title="SDBP_BADSCHEMA Field" Url="html/5a858a50-1b4b-f469-19fc-0351fa71101e.htm" />
+        <HelpTOCNode Title="SDBP_FAILED Field" Url="html/1d98b778-31ef-5b7c-bb5a-56de65a2b871.htm" />
+        <HelpTOCNode Title="SDBP_FAILURE Field" Url="html/ae7f2f01-e1f4-d69e-ae73-d89a4668cbfb.htm" />
+        <HelpTOCNode Title="SDBP_GLOBAL_TIMEOUT Field" Url="html/28f54bea-2739-7949-e3f7-b60061c3bd8f.htm" />
+        <HelpTOCNode Title="SDBP_MASTER_TIMEOUT Field" Url="html/30ed19b8-ebd0-1361-97cb-d52e1e2498b3.htm" />
+        <HelpTOCNode Title="SDBP_NOCONNECTION Field" Url="html/bc6c1f18-2a27-3e30-16d8-f74c89e9cfcb.htm" />
+        <HelpTOCNode Title="SDBP_NOMASTER Field" Url="html/3858dbce-f491-2aee-35c9-36d1135d8d06.htm" />
+        <HelpTOCNode Title="SDBP_NOPRIMARY Field" Url="html/f2318b7b-d705-0c90-3a46-96fa83548515.htm" />
+        <HelpTOCNode Title="SDBP_NOSERVICE Field" Url="html/9659dc17-8c88-b827-fd04-3da46fe59f97.htm" />
+        <HelpTOCNode Title="SDBP_PARTIAL Field" Url="html/c2dbdc4b-aa17-d13f-663c-8bb24af2356d.htm" />
+        <HelpTOCNode Title="SDBP_PRIMARY_TIMEOUT Field" Url="html/75270019-b99d-a184-1fd7-3009e0a00651.htm" />
+        <HelpTOCNode Title="SDBP_SUCCESS Field" Url="html/baee9299-98d2-9ade-4e6c-b622af0d63d8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e926afa7-7f87-4b9f-8a67-55dcc3550b5a" Title="Status Methods" Url="html/3c9be09c-aa6f-dd85-9ca6-c506d4335317.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/4823ffd2-35fc-ffa6-7019-e401bbc16225.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fd9fa8eb-049b-48f2-a100-55416f214721" Title="StringRangeParams Class" Url="html/3f1d76b2-6302-b2ab-2ef7-44c1203ed676.htm">
+      <HelpTOCNode Title="StringRangeParams Members" Url="html/c32c0366-0b4e-c152-bc15-635c7822659f.htm" />
+      <HelpTOCNode Title="StringRangeParams Constructor " Url="html/5bab7990-8ab7-5241-7e7f-997403035e6a.htm" />
+      <HelpTOCNode Id="925792ab-ed5f-4517-abf8-7b73752a2d92" Title="StringRangeParams Methods" Url="html/ba2c40b3-b96d-8958-0a7f-aa8a38115b4c.htm">
+        <HelpTOCNode Title="Count Method " Url="html/ef787bf1-7d5a-03bd-c21c-6fd1713b5f34.htm" />
+        <HelpTOCNode Title="EndKey Method " Url="html/a6909599-36d7-28e8-6dd2-8b21f5b05fd9.htm" />
+        <HelpTOCNode Title="Prefix Method " Url="html/2721ef30-39f6-2105-228f-4cd16d4cd5b6.htm" />
+        <HelpTOCNode Title="StartKey Method " Url="html/c29e0b18-3713-7a04-ce96-f477b5a5cd00.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="eaa5d254-da3c-43ec-af0a-15f787d57899" Title="Submitter Class" Url="html/d00531f5-7676-d9c7-5493-e36cd7bb4841.htm">
+      <HelpTOCNode Title="Submitter Members" Url="html/84ace395-a43b-e96c-1755-8bf6a1f90683.htm" />
+      <HelpTOCNode Id="56999a81-2f2e-4be8-b03a-220770e4028e" Title="Submitter Methods" Url="html/17d1c45f-70b4-2e9e-46a9-7d3ab0b6a09a.htm">
+        <HelpTOCNode Title="Dispose Method " Url="html/00eed50e-5064-7249-0f9b-cadf0bc79a6c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="80d544d7-477e-45b2-9a02-7ae67f04400f" Title="Table Class" Url="html/1560b48c-8c63-7bac-e2f8-754303477819.htm">
+      <HelpTOCNode Title="Table Members" Url="html/63ad3104-4257-789f-fc1a-007b7eb4e5e2.htm" />
+      <HelpTOCNode Id="7ffea1dd-eaaa-4170-a749-8c0c602bdc07" Title="Table Methods" Url="html/ae1013c0-fd4e-7d57-ec1e-9fccee96ff62.htm">
+        <HelpTOCNode Id="b9fd690b-48fa-4fab-849a-b86748144793" Title="Count Method " Url="html/38b0cd82-739b-ceca-3122-b7111a5fc583.htm">
+          <HelpTOCNode Title="Count Method (ByteRangeParams)" Url="html/26e82a81-8f59-4ab4-9134-c4cdf17149b3.htm" />
+          <HelpTOCNode Title="Count Method (StringRangeParams)" Url="html/5088533e-d622-c30e-8285-c232076fc203.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="067d0833-e828-40db-afce-55ed95920975" Title="Delete Method " Url="html/5e6395d0-ee6f-5b9b-ba33-afe4f8ee3d10.htm">
+          <HelpTOCNode Title="Delete Method (Byte[])" Url="html/0679f81e-ec09-1538-aede-7fb4c44fc738.htm" />
+          <HelpTOCNode Title="Delete Method (String)" Url="html/0255e70e-2446-3ef3-6885-ff98608cf90c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DeleteTable Method " Url="html/db2f7a3d-0a74-3392-456e-ed978a28267e.htm" />
+        <HelpTOCNode Id="d6e2c2db-ef2a-44ea-b481-dae06079f1d9" Title="Get Method " Url="html/61ff0d78-6a7e-6f2c-b278-a31e7b40ad26.htm">
+          <HelpTOCNode Title="Get Method (Byte[])" Url="html/64faedd1-4473-6ff9-8b74-6461df0c031a.htm" />
+          <HelpTOCNode Title="Get Method (String)" Url="html/eb08b034-03c8-f256-412e-285e7ac6ef19.htm" />
+          <HelpTOCNode Title="Get Method (Byte[], Byte[])" Url="html/878aef9a-2205-4d44-17a9-2bb176f60a33.htm" />
+          <HelpTOCNode Title="Get Method (String, String)" Url="html/27a84c26-d4b0-43a5-88fc-6c8474a69872.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="75e6a2c7-5bdf-4dab-82c0-d16829ce3f82" Title="GetKeyIterator Method " Url="html/70bb199d-836d-a608-911f-ed5e95ed127a.htm">
+          <HelpTOCNode Title="GetKeyIterator Method (ByteRangeParams)" Url="html/45e70cff-8a26-1c22-9f17-2e3ed3ba43de.htm" />
+          <HelpTOCNode Title="GetKeyIterator Method (StringRangeParams)" Url="html/6e48bfb7-a0dc-ee05-cde2-3e9fe8964caf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="7ce5c068-fd7c-4bc2-847f-56406b75ac0d" Title="GetKeyValueIterator Method " Url="html/f7dc6b27-916e-56ec-c88b-d7c70da4d2aa.htm">
+          <HelpTOCNode Title="GetKeyValueIterator Method (ByteRangeParams)" Url="html/1a742114-1d51-8007-c2d1-64cc7fbf90fe.htm" />
+          <HelpTOCNode Title="GetKeyValueIterator Method (StringRangeParams)" Url="html/b07a868d-473b-4343-a6e1-e74ff87bbdbb.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8192ec80-0b56-468e-a14f-5c6fb229e97c" Title="GetSequence Method " Url="html/57db4090-d1e1-1458-0b43-6fdc27c06c94.htm">
+          <HelpTOCNode Title="GetSequence Method (Byte[])" Url="html/5c3ed157-86d1-7436-9eb5-e031d6e95ab3.htm" />
+          <HelpTOCNode Title="GetSequence Method (String)" Url="html/8b6126f6-9dd5-00d5-e472-3c771863c7fc.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="RenameTable Method " Url="html/cdeae5ba-b269-3183-947d-45fd7dbecb20.htm" />
+        <HelpTOCNode Id="f97d34f9-f425-43dd-9aba-d2d0a2bde4ec" Title="Set Method " Url="html/5423521f-4fa4-fabc-f14e-c2dff934ea4b.htm">
+          <HelpTOCNode Title="Set Method (Byte[], Byte[])" Url="html/840893ff-4650-768f-fe5b-2aa4cf86d793.htm" />
+          <HelpTOCNode Title="Set Method (String, String)" Url="html/68205ddd-bcde-2bd3-71e8-6137053eb383.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="TruncateTable Method " Url="html/8677df7a-688e-c442-2ae1-0fa895e51bd5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bbd7edd1-fa49-4a8f-b22f-f68a2e3b121f" Title="Table Properties" Url="html/15e0bde9-7d23-a2b1-971c-15ac516328ee.htm">
+        <HelpTOCNode Title="Database Property " Url="html/84a4c381-79ba-bc7d-678b-e791f01c4a81.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/063555a0-92cd-ee2e-0e46-e0f49da1d5bb.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="BATCH_DEFAULT field" Url="html/16d73565-5442-956c-2f66-2d6f72c7583e.htm" />
+  <HelpKINode Title="BATCH_NOAUTOSUBMIT field" Url="html/ffeb0909-adf4-84b3-bc7f-519269b7af32.htm" />
+  <HelpKINode Title="BATCH_SINGLE field" Url="html/adac72bd-7a98-2e59-d259-b69845b297b2.htm" />
+  <HelpKINode Title="Begin method" Url="html/7a7e2b43-0eef-3cb2-ddd3-04302e6c8f13.htm" />
+  <HelpKINode Title="ByteRangeParams class" Url="html/24986431-e0c5-4edf-2b2b-220b27f9ccad.htm" />
+  <HelpKINode Title="ByteRangeParams class" Url="html/4e02c15e-72c9-0e09-3752-d937e0df7360.htm" />
+  <HelpKINode Title="ByteRangeParams class">
+    <HelpKINode Title="about ByteRangeParams class" Url="html/4e02c15e-72c9-0e09-3752-d937e0df7360.htm" />
+    <HelpKINode Title="all members" Url="html/24986431-e0c5-4edf-2b2b-220b27f9ccad.htm" />
+    <HelpKINode Title="constructor" Url="html/48dce83e-e81e-5be0-e80f-91bf4e851cbf.htm" />
+    <HelpKINode Title="methods" Url="html/bb1f265e-6f14-c245-535d-04d9b04f3c94.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ByteRangeParams.ByteRangeParams constructor" Url="html/48dce83e-e81e-5be0-e80f-91bf4e851cbf.htm" />
+  <HelpKINode Title="ByteRangeParams.Count method" Url="html/385f0769-bdbd-7a17-6878-150ac5305d4b.htm" />
+  <HelpKINode Title="ByteRangeParams.EndKey method" Url="html/36964299-80c7-40e4-90c5-402905a4a1f1.htm" />
+  <HelpKINode Title="ByteRangeParams.Prefix method" Url="html/6db72ae0-c872-568c-9136-bc73b41c3f50.htm" />
+  <HelpKINode Title="ByteRangeParams.StartKey method" Url="html/5d8b67f5-c97e-c3fc-091c-eaddef20bb78.htm" />
+  <HelpKINode Title="Client class" Url="html/f65479d8-1563-7ce6-6142-d3ce8c64b418.htm" />
+  <HelpKINode Title="Client class" Url="html/ff5b1185-b992-0eb0-34b9-0c38efdbc00b.htm" />
+  <HelpKINode Title="Client class">
+    <HelpKINode Title="about Client class" Url="html/f65479d8-1563-7ce6-6142-d3ce8c64b418.htm" />
+    <HelpKINode Title="all members" Url="html/ff5b1185-b992-0eb0-34b9-0c38efdbc00b.htm" />
+    <HelpKINode Title="constructor" Url="html/338c3de3-db8b-6333-6a31-bee2a657f1b6.htm" />
+    <HelpKINode Title="fields" Url="html/2a218d50-351e-ee0d-0444-7490e17c1309.htm" />
+    <HelpKINode Title="methods" Url="html/042d0c8c-7b3b-4bd7-9c1f-ab49cf64612c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Client.BATCH_DEFAULT field" Url="html/16d73565-5442-956c-2f66-2d6f72c7583e.htm" />
+  <HelpKINode Title="Client.BATCH_NOAUTOSUBMIT field" Url="html/ffeb0909-adf4-84b3-bc7f-519269b7af32.htm" />
+  <HelpKINode Title="Client.BATCH_SINGLE field" Url="html/adac72bd-7a98-2e59-d259-b69845b297b2.htm" />
+  <HelpKINode Title="Client.Begin method" Url="html/7a7e2b43-0eef-3cb2-ddd3-04302e6c8f13.htm" />
+  <HelpKINode Title="Client.Client constructor" Url="html/338c3de3-db8b-6333-6a31-bee2a657f1b6.htm" />
+  <HelpKINode Title="Client.CONSISTENCY_ANY field" Url="html/2f3e404e-f962-f7e7-15ff-c6a10d06bc13.htm" />
+  <HelpKINode Title="Client.CONSISTENCY_RYW field" Url="html/6df2823a-2c72-208c-4062-d9e8a2b3b8f7.htm" />
+  <HelpKINode Title="Client.CONSISTENCY_STRICT field" Url="html/c2e88fa2-3d60-deb3-b99e-d40199d50133.htm" />
+  <HelpKINode Title="Client.CreateDatabase method" Url="html/d1a23f2c-5862-59f2-8a41-b478b3e9faed.htm" />
+  <HelpKINode Title="Client.GetDatabase method" Url="html/dcbf3b16-a18b-0616-e94a-ea6a24b5dae2.htm" />
+  <HelpKINode Title="Client.GetDatabases method" Url="html/de93ec32-9d47-bd6e-df34-1ce0a6e0bc86.htm" />
+  <HelpKINode Title="Client.GetGlobalTimeout method" Url="html/c9c0ffe5-f908-0c5a-133b-882882f466cb.htm" />
+  <HelpKINode Title="Client.GetMasterTimeout method" Url="html/e873694d-7ab1-771d-5684-2b8f1d6a7761.htm" />
+  <HelpKINode Title="Client.GetQuorum method" Url="html/a0805fb4-cca4-b80a-837d-03f790ca3816.htm" />
+  <HelpKINode Title="Client.GetQuorums method" Url="html/8f218aba-0d57-9891-fe93-a8c3e127efdf.htm" />
+  <HelpKINode Title="Client.Rollback method" Url="html/309d63b0-68cd-e477-653a-c460c3552206.htm" />
+  <HelpKINode Title="Client.SetBatchLimit method" Url="html/ee954f2d-f526-f679-cf7d-9bb434c7bd3d.htm" />
+  <HelpKINode Title="Client.SetBatchMode method" Url="html/8f76cb9f-e790-9e10-e071-92d80c474fb8.htm" />
+  <HelpKINode Title="Client.SetConsistencyMode method" Url="html/5e1fdbf2-047c-9b3e-2a9e-73fb688443e9.htm" />
+  <HelpKINode Title="Client.SetGlobalTimeout method" Url="html/22e0bc39-b418-4211-c07a-ecace99920a4.htm" />
+  <HelpKINode Title="Client.SetMasterTimeout method" Url="html/251becaa-1fb6-d3a6-eae4-93c271be0feb.htm" />
+  <HelpKINode Title="Client.SetTrace method" Url="html/d7639926-3f35-9ea8-b3a5-f05fbf8641c9.htm" />
+  <HelpKINode Title="Client.Submit method" Url="html/15a4d36d-2fbb-f1fd-1de7-fd9d09691e4b.htm" />
+  <HelpKINode Title="CONSISTENCY_ANY field" Url="html/2f3e404e-f962-f7e7-15ff-c6a10d06bc13.htm" />
+  <HelpKINode Title="CONSISTENCY_RYW field" Url="html/6df2823a-2c72-208c-4062-d9e8a2b3b8f7.htm" />
+  <HelpKINode Title="CONSISTENCY_STRICT field" Url="html/c2e88fa2-3d60-deb3-b99e-d40199d50133.htm" />
+  <HelpKINode Title="Count method" Url="html/385f0769-bdbd-7a17-6878-150ac5305d4b.htm" />
+  <HelpKINode Title="Count method" Url="html/38b0cd82-739b-ceca-3122-b7111a5fc583.htm" />
+  <HelpKINode Title="Count method" Url="html/ef787bf1-7d5a-03bd-c21c-6fd1713b5f34.htm" />
+  <HelpKINode Title="CreateDatabase method" Url="html/d1a23f2c-5862-59f2-8a41-b478b3e9faed.htm" />
+  <HelpKINode Title="CreateTable method" Url="html/ed24a88a-3d24-297b-7023-a384c1170b0e.htm" />
+  <HelpKINode Title="Database class" Url="html/3ade9989-3af6-a453-192d-4281a86da598.htm" />
+  <HelpKINode Title="Database class" Url="html/96eeb85b-14d6-d2a2-d1e9-39768d3bf8d6.htm" />
+  <HelpKINode Title="Database class">
+    <HelpKINode Title="about Database class" Url="html/96eeb85b-14d6-d2a2-d1e9-39768d3bf8d6.htm" />
+    <HelpKINode Title="all members" Url="html/3ade9989-3af6-a453-192d-4281a86da598.htm" />
+    <HelpKINode Title="methods" Url="html/a9894c0c-a21d-347e-f9b4-906fff778ee0.htm" />
+    <HelpKINode Title="properties" Url="html/a98bc9c2-171c-89b4-e8fc-a29a3b9d5601.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Database property" Url="html/84a4c381-79ba-bc7d-678b-e791f01c4a81.htm" />
+  <HelpKINode Title="Database.CreateTable method" Url="html/ed24a88a-3d24-297b-7023-a384c1170b0e.htm" />
+  <HelpKINode Title="Database.DeleteDatabase method" Url="html/a477132a-e842-ae8e-afca-ab353fdfd785.htm" />
+  <HelpKINode Title="Database.GetTable method" Url="html/dcbbbf2c-91b8-17e6-91b3-4e7eff2c04e7.htm" />
+  <HelpKINode Title="Database.GetTables method" Url="html/14057e7c-44e7-7188-1db4-c17f401df980.htm" />
+  <HelpKINode Title="Database.Name property" Url="html/f3b6895f-dced-b0dd-dcdd-394eb8df84ae.htm" />
+  <HelpKINode Title="Database.RenameDatabase method" Url="html/53605781-f30e-e0c6-add7-345686d36673.htm" />
+  <HelpKINode Title="Delete method" Url="html/5e6395d0-ee6f-5b9b-ba33-afe4f8ee3d10.htm" />
+  <HelpKINode Title="DeleteDatabase method" Url="html/a477132a-e842-ae8e-afca-ab353fdfd785.htm" />
+  <HelpKINode Title="DeleteTable method" Url="html/db2f7a3d-0a74-3392-456e-ed978a28267e.htm" />
+  <HelpKINode Title="Dispose method" Url="html/00eed50e-5064-7249-0f9b-cadf0bc79a6c.htm" />
+  <HelpKINode Title="EndKey method" Url="html/36964299-80c7-40e4-90c5-402905a4a1f1.htm" />
+  <HelpKINode Title="EndKey method" Url="html/a6909599-36d7-28e8-6dd2-8b21f5b05fd9.htm" />
+  <HelpKINode Title="Get method" Url="html/61ff0d78-6a7e-6f2c-b278-a31e7b40ad26.htm" />
+  <HelpKINode Title="GetDatabase method" Url="html/dcbf3b16-a18b-0616-e94a-ea6a24b5dae2.htm" />
+  <HelpKINode Title="GetDatabases method" Url="html/de93ec32-9d47-bd6e-df34-1ce0a6e0bc86.htm" />
+  <HelpKINode Title="GetGlobalTimeout method" Url="html/c9c0ffe5-f908-0c5a-133b-882882f466cb.htm" />
+  <HelpKINode Title="GetKeyIterator method" Url="html/70bb199d-836d-a608-911f-ed5e95ed127a.htm" />
+  <HelpKINode Title="GetKeyValueIterator method" Url="html/f7dc6b27-916e-56ec-c88b-d7c70da4d2aa.htm" />
+  <HelpKINode Title="GetMasterTimeout method" Url="html/e873694d-7ab1-771d-5684-2b8f1d6a7761.htm" />
+  <HelpKINode Title="GetNext property" Url="html/ce3fbaeb-70b5-a3ad-f262-3809f1527ad5.htm" />
+  <HelpKINode Title="GetQuorum method" Url="html/a0805fb4-cca4-b80a-837d-03f790ca3816.htm" />
+  <HelpKINode Title="GetQuorums method" Url="html/8f218aba-0d57-9891-fe93-a8c3e127efdf.htm" />
+  <HelpKINode Title="GetSequence method" Url="html/57db4090-d1e1-1458-0b43-6fdc27c06c94.htm" />
+  <HelpKINode Title="GetTable method" Url="html/dcbbbf2c-91b8-17e6-91b3-4e7eff2c04e7.htm" />
+  <HelpKINode Title="GetTables method" Url="html/14057e7c-44e7-7188-1db4-c17f401df980.htm" />
+  <HelpKINode Title="Name property" Url="html/063555a0-92cd-ee2e-0e46-e0f49da1d5bb.htm" />
+  <HelpKINode Title="Name property" Url="html/7e359fbe-5552-6ab1-ba63-9aade6a7eb48.htm" />
+  <HelpKINode Title="Name property" Url="html/f3b6895f-dced-b0dd-dcdd-394eb8df84ae.htm" />
+  <HelpKINode Title="Prefix method" Url="html/2721ef30-39f6-2105-228f-4cd16d4cd5b6.htm" />
+  <HelpKINode Title="Prefix method" Url="html/6db72ae0-c872-568c-9136-bc73b41c3f50.htm" />
+  <HelpKINode Title="Quorum class" Url="html/477d4f60-8afe-2c50-f7b5-b0e6e8055f74.htm" />
+  <HelpKINode Title="Quorum class" Url="html/a9c5901e-3a26-a857-87f6-43b1540f05f2.htm" />
+  <HelpKINode Title="Quorum class">
+    <HelpKINode Title="about Quorum class" Url="html/477d4f60-8afe-2c50-f7b5-b0e6e8055f74.htm" />
+    <HelpKINode Title="all members" Url="html/a9c5901e-3a26-a857-87f6-43b1540f05f2.htm" />
+    <HelpKINode Title="properties" Url="html/0fdf4ce0-11dd-e5ab-9707-5ffb77ecb4aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Quorum.Name property" Url="html/7e359fbe-5552-6ab1-ba63-9aade6a7eb48.htm" />
+  <HelpKINode Title="RenameDatabase method" Url="html/53605781-f30e-e0c6-add7-345686d36673.htm" />
+  <HelpKINode Title="RenameTable method" Url="html/cdeae5ba-b269-3183-947d-45fd7dbecb20.htm" />
+  <HelpKINode Title="Reset method" Url="html/34bd505b-a23f-8f32-d899-c2d37f0582a7.htm" />
+  <HelpKINode Title="Rollback method" Url="html/309d63b0-68cd-e477-653a-c460c3552206.htm" />
+  <HelpKINode Title="Scalien namespace" Url="html/0ef38bc2-351a-08a1-4269-904581e21217.htm" />
+  <HelpKINode Title="Scalien.ByteRangeParams class" Url="html/24986431-e0c5-4edf-2b2b-220b27f9ccad.htm" />
+  <HelpKINode Title="Scalien.ByteRangeParams class" Url="html/4e02c15e-72c9-0e09-3752-d937e0df7360.htm" />
+  <HelpKINode Title="Scalien.Client class" Url="html/f65479d8-1563-7ce6-6142-d3ce8c64b418.htm" />
+  <HelpKINode Title="Scalien.Client class" Url="html/ff5b1185-b992-0eb0-34b9-0c38efdbc00b.htm" />
+  <HelpKINode Title="Scalien.Database class" Url="html/3ade9989-3af6-a453-192d-4281a86da598.htm" />
+  <HelpKINode Title="Scalien.Database class" Url="html/96eeb85b-14d6-d2a2-d1e9-39768d3bf8d6.htm" />
+  <HelpKINode Title="Scalien.Quorum class" Url="html/477d4f60-8afe-2c50-f7b5-b0e6e8055f74.htm" />
+  <HelpKINode Title="Scalien.Quorum class" Url="html/a9c5901e-3a26-a857-87f6-43b1540f05f2.htm" />
+  <HelpKINode Title="Scalien.SDBPException class" Url="html/7fb1c98d-e56d-9932-75c6-adcb16ca88ff.htm" />
+  <HelpKINode Title="Scalien.SDBPException class" Url="html/96be6bee-1d42-3c74-733e-7f89b4eb389a.htm" />
+  <HelpKINode Title="Scalien.Sequence class" Url="html/40265165-8800-4e63-9530-9c6f979220ba.htm" />
+  <HelpKINode Title="Scalien.Sequence class" Url="html/ac8e2380-5c19-24c0-50d8-84094398652d.htm" />
+  <HelpKINode Title="Scalien.Status class" Url="html/9180ecfd-46e2-8d1a-5c09-94cdcb44da15.htm" />
+  <HelpKINode Title="Scalien.Status class" Url="html/c476b235-1576-02d0-a71c-a6903fd2da3e.htm" />
+  <HelpKINode Title="Scalien.StringRangeParams class" Url="html/3f1d76b2-6302-b2ab-2ef7-44c1203ed676.htm" />
+  <HelpKINode Title="Scalien.StringRangeParams class" Url="html/c32c0366-0b4e-c152-bc15-635c7822659f.htm" />
+  <HelpKINode Title="Scalien.Submitter class" Url="html/84ace395-a43b-e96c-1755-8bf6a1f90683.htm" />
+  <HelpKINode Title="Scalien.Submitter class" Url="html/d00531f5-7676-d9c7-5493-e36cd7bb4841.htm" />
+  <HelpKINode Title="Scalien.Table class" Url="html/1560b48c-8c63-7bac-e2f8-754303477819.htm" />
+  <HelpKINode Title="Scalien.Table class" Url="html/63ad3104-4257-789f-fc1a-007b7eb4e5e2.htm" />
+  <HelpKINode Title="SDBPException class" Url="html/7fb1c98d-e56d-9932-75c6-adcb16ca88ff.htm" />
+  <HelpKINode Title="SDBPException class" Url="html/96be6bee-1d42-3c74-733e-7f89b4eb389a.htm" />
+  <HelpKINode Title="SDBPException class">
+    <HelpKINode Title="about SDBPException class" Url="html/7fb1c98d-e56d-9932-75c6-adcb16ca88ff.htm" />
+    <HelpKINode Title="all members" Url="html/96be6bee-1d42-3c74-733e-7f89b4eb389a.htm" />
+    <HelpKINode Title="properties" Url="html/d6362eaa-e8cf-6759-9a55-bfab934ba1ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SDBPException.Status property" Url="html/28a6f805-7a8e-9ef5-295f-49c0915b91d3.htm" />
+  <HelpKINode Title="SDBP_API_ERROR field" Url="html/b4c03aff-2ca9-ab3d-1f95-bb230645db2b.htm" />
+  <HelpKINode Title="SDBP_BADSCHEMA field" Url="html/5a858a50-1b4b-f469-19fc-0351fa71101e.htm" />
+  <HelpKINode Title="SDBP_FAILED field" Url="html/1d98b778-31ef-5b7c-bb5a-56de65a2b871.htm" />
+  <HelpKINode Title="SDBP_FAILURE field" Url="html/ae7f2f01-e1f4-d69e-ae73-d89a4668cbfb.htm" />
+  <HelpKINode Title="SDBP_GLOBAL_TIMEOUT field" Url="html/28f54bea-2739-7949-e3f7-b60061c3bd8f.htm" />
+  <HelpKINode Title="SDBP_MASTER_TIMEOUT field" Url="html/30ed19b8-ebd0-1361-97cb-d52e1e2498b3.htm" />
+  <HelpKINode Title="SDBP_NOCONNECTION field" Url="html/bc6c1f18-2a27-3e30-16d8-f74c89e9cfcb.htm" />
+  <HelpKINode Title="SDBP_NOMASTER field" Url="html/3858dbce-f491-2aee-35c9-36d1135d8d06.htm" />
+  <HelpKINode Title="SDBP_NOPRIMARY field" Url="html/f2318b7b-d705-0c90-3a46-96fa83548515.htm" />
+  <HelpKINode Title="SDBP_NOSERVICE field" Url="html/9659dc17-8c88-b827-fd04-3da46fe59f97.htm" />
+  <HelpKINode Title="SDBP_PARTIAL field" Url="html/c2dbdc4b-aa17-d13f-663c-8bb24af2356d.htm" />
+  <HelpKINode Title="SDBP_PRIMARY_TIMEOUT field" Url="html/75270019-b99d-a184-1fd7-3009e0a00651.htm" />
+  <HelpKINode Title="SDBP_SUCCESS field" Url="html/baee9299-98d2-9ade-4e6c-b622af0d63d8.htm" />
+  <HelpKINode Title="Sequence class" Url="html/40265165-8800-4e63-9530-9c6f979220ba.htm" />
+  <HelpKINode Title="Sequence class" Url="html/ac8e2380-5c19-24c0-50d8-84094398652d.htm" />
+  <HelpKINode Title="Sequence class">
+    <HelpKINode Title="about Sequence class" Url="html/40265165-8800-4e63-9530-9c6f979220ba.htm" />
+    <HelpKINode Title="all members" Url="html/ac8e2380-5c19-24c0-50d8-84094398652d.htm" />
+    <HelpKINode Title="methods" Url="html/fcc14aff-d9d2-fda7-f930-15001f8d3e55.htm" />
+    <HelpKINode Title="properties" Url="html/3711c0a0-e11f-41fe-d701-36123d787289.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sequence.GetNext property" Url="html/ce3fbaeb-70b5-a3ad-f262-3809f1527ad5.htm" />
+  <HelpKINode Title="Sequence.Reset method" Url="html/34bd505b-a23f-8f32-d899-c2d37f0582a7.htm" />
+  <HelpKINode Title="Sequence.SetGranularity method" Url="html/230590d0-2e8e-d262-48d3-af276b7481dc.htm" />
+  <HelpKINode Title="Set method" Url="html/5423521f-4fa4-fabc-f14e-c2dff934ea4b.htm" />
+  <HelpKINode Title="SetBatchLimit method" Url="html/ee954f2d-f526-f679-cf7d-9bb434c7bd3d.htm" />
+  <HelpKINode Title="SetBatchMode method" Url="html/8f76cb9f-e790-9e10-e071-92d80c474fb8.htm" />
+  <HelpKINode Title="SetConsistencyMode method" Url="html/5e1fdbf2-047c-9b3e-2a9e-73fb688443e9.htm" />
+  <HelpKINode Title="SetGlobalTimeout method" Url="html/22e0bc39-b418-4211-c07a-ecace99920a4.htm" />
+  <HelpKINode Title="SetGranularity method" Url="html/230590d0-2e8e-d262-48d3-af276b7481dc.htm" />
+  <HelpKINode Title="SetMasterTimeout method" Url="html/251becaa-1fb6-d3a6-eae4-93c271be0feb.htm" />
+  <HelpKINode Title="SetTrace method" Url="html/d7639926-3f35-9ea8-b3a5-f05fbf8641c9.htm" />
+  <HelpKINode Title="StartKey method" Url="html/5d8b67f5-c97e-c3fc-091c-eaddef20bb78.htm" />
+  <HelpKINode Title="StartKey method" Url="html/c29e0b18-3713-7a04-ce96-f477b5a5cd00.htm" />
+  <HelpKINode Title="Status class" Url="html/9180ecfd-46e2-8d1a-5c09-94cdcb44da15.htm" />
+  <HelpKINode Title="Status class" Url="html/c476b235-1576-02d0-a71c-a6903fd2da3e.htm" />
+  <HelpKINode Title="Status class">
+    <HelpKINode Title="about Status class" Url="html/c476b235-1576-02d0-a71c-a6903fd2da3e.htm" />
+    <HelpKINode Title="all members" Url="html/9180ecfd-46e2-8d1a-5c09-94cdcb44da15.htm" />
+    <HelpKINode Title="constructor" Url="html/aabb30c2-4ef0-c2b5-0dfc-e26f4a2f8292.htm" />
+    <HelpKINode Title="fields" Url="html/f47aa04a-4738-2774-08cd-1d028d5020e6.htm" />
+    <HelpKINode Title="methods" Url="html/3c9be09c-aa6f-dd85-9ca6-c506d4335317.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Status property" Url="html/28a6f805-7a8e-9ef5-295f-49c0915b91d3.htm" />
+  <HelpKINode Title="Status.SDBP_API_ERROR field" Url="html/b4c03aff-2ca9-ab3d-1f95-bb230645db2b.htm" />
+  <HelpKINode Title="Status.SDBP_BADSCHEMA field" Url="html/5a858a50-1b4b-f469-19fc-0351fa71101e.htm" />
+  <HelpKINode Title="Status.SDBP_FAILED field" Url="html/1d98b778-31ef-5b7c-bb5a-56de65a2b871.htm" />
+  <HelpKINode Title="Status.SDBP_FAILURE field" Url="html/ae7f2f01-e1f4-d69e-ae73-d89a4668cbfb.htm" />
+  <HelpKINode Title="Status.SDBP_GLOBAL_TIMEOUT field" Url="html/28f54bea-2739-7949-e3f7-b60061c3bd8f.htm" />
+  <HelpKINode Title="Status.SDBP_MASTER_TIMEOUT field" Url="html/30ed19b8-ebd0-1361-97cb-d52e1e2498b3.htm" />
+  <HelpKINode Title="Status.SDBP_NOCONNECTION field" Url="html/bc6c1f18-2a27-3e30-16d8-f74c89e9cfcb.htm" />
+  <HelpKINode Title="Status.SDBP_NOMASTER field" Url="html/3858dbce-f491-2aee-35c9-36d1135d8d06.htm" />
+  <HelpKINode Title="Status.SDBP_NOPRIMARY field" Url="html/f2318b7b-d705-0c90-3a46-96fa83548515.htm" />
+  <HelpKINode Title="Status.SDBP_NOSERVICE field" Url="html/9659dc17-8c88-b827-fd04-3da46fe59f97.htm" />
+  <HelpKINode Title="Status.SDBP_PARTIAL field" Url="html/c2dbdc4b-aa17-d13f-663c-8bb24af2356d.htm" />
+  <HelpKINode Title="Status.SDBP_PRIMARY_TIMEOUT field" Url="html/75270019-b99d-a184-1fd7-3009e0a00651.htm" />
+  <HelpKINode Title="Status.SDBP_SUCCESS field" Url="html/baee9299-98d2-9ade-4e6c-b622af0d63d8.htm" />
+  <HelpKINode Title="Status.Status constructor" Url="html/aabb30c2-4ef0-c2b5-0dfc-e26f4a2f8292.htm" />
+  <HelpKINode Title="Status.ToString method" Url="html/4823ffd2-35fc-ffa6-7019-e401bbc16225.htm" />
+  <HelpKINode Title="StringRangeParams class" Url="html/3f1d76b2-6302-b2ab-2ef7-44c1203ed676.htm" />
+  <HelpKINode Title="StringRangeParams class" Url="html/c32c0366-0b4e-c152-bc15-635c7822659f.htm" />
+  <HelpKINode Title="StringRangeParams class">
+    <HelpKINode Title="about StringRangeParams class" Url="html/3f1d76b2-6302-b2ab-2ef7-44c1203ed676.htm" />
+    <HelpKINode Title="all members" Url="html/c32c0366-0b4e-c152-bc15-635c7822659f.htm" />
+    <HelpKINode Title="constructor" Url="html/5bab7990-8ab7-5241-7e7f-997403035e6a.htm" />
+    <HelpKINode Title="methods" Url="html/ba2c40b3-b96d-8958-0a7f-aa8a38115b4c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StringRangeParams.Count method" Url="html/ef787bf1-7d5a-03bd-c21c-6fd1713b5f34.htm" />
+  <HelpKINode Title="StringRangeParams.EndKey method" Url="html/a6909599-36d7-28e8-6dd2-8b21f5b05fd9.htm" />
+  <HelpKINode Title="StringRangeParams.Prefix method" Url="html/2721ef30-39f6-2105-228f-4cd16d4cd5b6.htm" />
+  <HelpKINode Title="StringRangeParams.StartKey method" Url="html/c29e0b18-3713-7a04-ce96-f477b5a5cd00.htm" />
+  <HelpKINode Title="StringRangeParams.StringRangeParams constructor" Url="html/5bab7990-8ab7-5241-7e7f-997403035e6a.htm" />
+  <HelpKINode Title="Submit method" Url="html/15a4d36d-2fbb-f1fd-1de7-fd9d09691e4b.htm" />
+  <HelpKINode Title="Submitter class" Url="html/84ace395-a43b-e96c-1755-8bf6a1f90683.htm" />
+  <HelpKINode Title="Submitter class" Url="html/d00531f5-7676-d9c7-5493-e36cd7bb4841.htm" />
+  <HelpKINode Title="Submitter class">
+    <HelpKINode Title="about Submitter class" Url="html/d00531f5-7676-d9c7-5493-e36cd7bb4841.htm" />
+    <HelpKINode Title="all members" Url="html/84ace395-a43b-e96c-1755-8bf6a1f90683.htm" />
+    <HelpKINode Title="methods" Url="html/17d1c45f-70b4-2e9e-46a9-7d3ab0b6a09a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Submitter.Dispose method" Url="html/00eed50e-5064-7249-0f9b-cadf0bc79a6c.htm" />
+  <HelpKINode Title="Table class" Url="html/1560b48c-8c63-7bac-e2f8-754303477819.htm" />
+  <HelpKINode Title="Table class" Url="html/63ad3104-4257-789f-fc1a-007b7eb4e5e2.htm" />
+  <HelpKINode Title="Table class">
+    <HelpKINode Title="about Table class" Url="html/1560b48c-8c63-7bac-e2f8-754303477819.htm" />
+    <HelpKINode Title="all members" Url="html/63ad3104-4257-789f-fc1a-007b7eb4e5e2.htm" />
+    <HelpKINode Title="methods" Url="html/ae1013c0-fd4e-7d57-ec1e-9fccee96ff62.htm" />
+    <HelpKINode Title="properties" Url="html/15e0bde9-7d23-a2b1-971c-15ac516328ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Table.Count method" Url="html/38b0cd82-739b-ceca-3122-b7111a5fc583.htm" />
+  <HelpKINode Title="Table.Database property" Url="html/84a4c381-79ba-bc7d-678b-e791f01c4a81.htm" />
+  <HelpKINode Title="Table.Delete method" Url="html/5e6395d0-ee6f-5b9b-ba33-afe4f8ee3d10.htm" />
+  <HelpKINode Title="Table.DeleteTable method" Url="html/db2f7a3d-0a74-3392-456e-ed978a28267e.htm" />
+  <HelpKINode Title="Table.Get method" Url="html/61ff0d78-6a7e-6f2c-b278-a31e7b40ad26.htm" />
+  <HelpKINode Title="Table.GetKeyIterator method" Url="html/70bb199d-836d-a608-911f-ed5e95ed127a.htm" />
+  <HelpKINode Title="Table.GetKeyValueIterator method" Url="html/f7dc6b27-916e-56ec-c88b-d7c70da4d2aa.htm" />
+  <HelpKINode Title="Table.GetSequence method" Url="html/57db4090-d1e1-1458-0b43-6fdc27c06c94.htm" />
+  <HelpKINode Title="Table.Name property" Url="html/063555a0-92cd-ee2e-0e46-e0f49da1d5bb.htm" />
+  <HelpKINode Title="Table.RenameTable method" Url="html/cdeae5ba-b269-3183-947d-45fd7dbecb20.htm" />
+  <HelpKINode Title="Table.Set method" Url="html/5423521f-4fa4-fabc-f14e-c2dff934ea4b.htm" />
+  <HelpKINode Title="Table.TruncateTable method" Url="html/8677df7a-688e-c442-2ae1-0fa895e51bd5.htm" />
+  <HelpKINode Title="ToString method" Url="html/4823ffd2-35fc-ffa6-7019-e401bbc16225.htm" />
+  <HelpKINode Title="TruncateTable method" Url="html/8677df7a-688e-c442-2ae1-0fa895e51bd5.htm" />
+</HelpKI>
