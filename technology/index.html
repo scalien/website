@@ -102,15 +102,15 @@
 
             <h2>Controllers</h2>
             <p>
-            The <span class="highlight">Controllers act as the brain</span> of the ScalienDB cluster and communicate among themselves to ensure the fault-tolerance and high-availability of the entire distributed database system.
+            The <span class="highlight">Controllers act as the brain</span> of the ScalienDB cluster. They communicate among themselves to ensure the fault-tolerance and high-availability of the entire distributed database system.
             Shard Servers and their membership in Replication Sets are managed by the Controllers.
             Internally, the controller nodes use the Paxos protocol to guarantee that the ScalienDB cluster is always in a well-defined, consistent state without the possibility of a split-brain scenario.
             The controllers handle the following functionality:
             </p>
             <ul>
-              <li>Store the database schema (databases, tables)</li>
+              <li>Store the database schema (databases and tables)</li>
               <li>Manage membership of shard servers</li>
-              <li>Assign Shard servers into Replication Sets for replication</li>
+              <li>Assign Shard Servers into Replication Sets</li>
               <li>Migrate shards across Replication Sets</li>
             </ul>
             <p>
@@ -120,8 +120,8 @@
 
             <h2>Clients</h2>
             <p>
-            The client library is smart client. It is easy for you to quickly write ScalienDB applications without worrying about the distributed nature of the database.
-            The client library is fully aware of the state of the ScalienDB cluster and <span class="highlight">hides any failover events</span> from you.
+            The client library is Smart Client. You can quickly write ScalienDB applications without worrying about the distributed nature of the database.
+            The client library is fully aware of the state of the ScalienDB cluster and <span class="highlight">automatically handles failover events</span>.
             The client supports distributing reads inside Replica Sets for <span class="highlight">linear read scalability</span> and distributed writes across different Replicata Sets for <span class="highlight">linear write scalability</span>.
             Additionally, you can batch commands for maximum throughput.
             ScalienDB client libraries are available for <span class="highlight">Java, C# and Python</span>. Each client library adheres to the idioms of its language.
@@ -132,11 +132,11 @@
             <h2>Data Model</h2>
             <p>
             ScalienDB is a NoSQL database with a <span class="highlight">key-value data model</span>.
-            At the highest level, data is organized into databases, then into tables, just like in traditional SQL databases.
+            At the highest level data is organized into databases abd then into tables, just like in traditional SQL databases.
             Tables are namespaces for key-value data, which may be split into several shards.
             Shards are mapped into Replica Sets and stored on Shard Servers.
             Keys and values in ScalienDB are not strongly typed, which allows for maximum flexibility when developing applications.
-            Keys are limited to 64K length, while values may be practically unlimited in length, which means ScalienDB can be used for a wide variety of data management tasks.
+            Keys are limited to a length of 64K while values are virtually unlimited in length. This means ScalienDB can be used for a wide variety of data management tasks.
             This architecture combines the best of relational and NoSQL models: it features databases and tables to organize data while employing a simple, flexible key-value model.
             </p>
 
@@ -144,15 +144,15 @@
             <p>
             The <span class="highlight">Shard Servers are the workhorses</span> of the distributed ScalienDB architecture.
             Shard servers are assigned into Replica Sets by Controllers for replication.
-            Like Controllers, Paxos is employed to ensure that the data is always up to date.
-            A <span class="highlight">high-performance linear on-disk storage engine</span> handcrafted for ScalienDB is used to store data on disk.
+            Like Controllers, the Paxos algorithm is employed to ensure that the data is always up to date.
+            A <span class="highlight">high-performance linear on-disk storage engine</span> is used to store data on disk.
             This storage engine is the best of both worlds. It combines technologies from traditional architectures, such as <span class="highlight">transactional redo logs</span> to eliminate any possibility of data loss, and cutting-edge technologies such as linearized disk I/O, introduced by Google's Bigtable system.
-            This combination of technologies assures that ScalienDB delivers both the dependability of SQL databases while opening the door to unlimited data and throughput scaling on conventional commodity hardware.
+            This combination of technologies assures that ScalienDB delivers the dependability of SQL databases while opening the door to unlimited data and throughput scaling on conventional commodity hardware.
             </p>
 
             <h2>Management console</h2>
             <p>
-            Administrative tasks are performed on the web-based Management Console using a browser like <span class="highlight">Mozilla Firefox or Google Chrome</span>.
+            Administrative tasks are performed on the web-based Management Console using a browser.
             The management console is fully featured and supports all ScalienDB operations:</p>
             <ul>
               <li>Monitoring the cluster state</li>
