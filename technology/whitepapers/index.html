@@ -5,7 +5,7 @@
     <meta name="description" content="Scalien" />
     <meta name="author" content="Scalien" />
     
-    <title>Paxos - Technology - Scalien Transactional NoSQL</title>
+    <title>Whitepapers - Technology - Scalien Transactional NoSQL</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
     <base href="../../" />
@@ -71,53 +71,13 @@
         </div>  
       </div>
     </div>
-
     <div class="inner-content">
-      <div class="wrap">        
-        <h2>Introduction</h2>
-        <p>
-        The Paxos algorithm was invented by computer scientist Leslie Lamport  in the 1990s.
-        The algorithm is a way for computers in a distributed database like ScalienDB to agree on what to do next.
-        </p>
-        <p>
-        It is best to think of <span class="highlight">Paxos</span> as a way to replicate a database command between the servers in the distributed database.
-        ScalienDB uses subsequent rounds of Paxos to replicate subsequent database commands.
-        This sequence of commands is called a database log. Paxos guarantees that all servers receive the same log.
-        </p>
-        <p>
-        Since the local database on each server itself is simply the subsequent execution of these log commands, the use of Paxos guarantees that all servers have the same local database.
-        This is called <span class="highlight">Immediate Consistency</span> to differentiate from Eventual Consistency, a family of different replication protocols employed by other NoSQL databases where data can go out of sync on servers.
-        </p>
-        <p>
-        Eventually Consistent solutions may sound acceptable at first, but they cause problems down the road as the application using the distributed database matures.
-        Senior Google engineer Sean Quinlan commenting on Google’s early use of Eventual Consistency:</p>
-        <p>
-        “Consistency was designed to be very loose. In retrospect, that turned out to be a lot more painful than anyone expected… At the time, it must have seemed like a good idea, but in retrospect I think… it proved to be more painful than it was worth.”
-        </p>
-        <p>
-        The Paxos algorithm lay dormant for a decade and was then popularized when Google started using it in their internal distributed database technologies.
-        <span class="highlight">Paxos is also used in Google's latest Megastore database.</span>
-        </p>
-        
-        <h2>Paxos in ScalienDB</h2>
-        <p>
-        In ScalienDB, we use Paxos for replicating database schema commands between Controllers, and data commands between Shard Servers.
-        Controllers use regular majority Paxos, which means <span class="highlight">two out of five Controllers can go down without problems</span>.
-        Shard Servers use a variation of Paxos called TotalPaxos.
-        TotalPaxos  requires all nodes for replication to succeed, because when a Shard Server goes offline and hence would block TotalPaxos, it is removed from its Replication Set by the Controllers.
-        </p>
-        <p>
-        Additionally, the ScalienDB Paxos implementation contains a <span class="highlight">performance optimization called MultiPaxos</span>.
-        MultiPaxos reduces the number of roundtrips and the number of disk writes necessary for a Paxos round from two to one, resulting in a <span class="highlight">100% speedup</span>.
-        </p>
-        <p>
-        With these optimizations, Paxos in ScalienDB is very fast for LAN replication. <span class="highlight">ScalienDB beats most other NoSQL databases in benchmarks</span>, even when going up against Eventual Consistent competitors.
-        </p>
-        <div class="clear">
-          <br/><br/>
-        </div>
+      <div class="wrap">
+        <iframe src="http://docs.google.com/viewer?url=http%3A%2F%2Fscalien.com%2Fpdf%2FWhitepaper%20-%20ScalienDB%20and%20NoSQL%20in%20the%20Enterprise.pdf&embedded=true" width="960" height="1300" style="border: none;"></iframe>
+        <div style="width:960px" id="__ss_11905417"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/scaliendb/scaliendb-in-90-seconds-11905417" title="ScalienDB in 90 seconds" target="_blank">ScalienDB in 90 seconds</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11905417" width="960" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
+        <div class="clear"><br/></div>
       </div>
-      
+
       <div class="footer">
   			<div class="wrap">
   				<div class="column-container">
@@ -199,8 +159,7 @@
   				</div>
   				<p class="copyright">Copyright &copy; 2012 Scalien. All rights reserved</p>
         </div>
-      </div>
+      </div>    
     </div>
   </body>
 </html>
-

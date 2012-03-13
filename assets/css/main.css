@@ -151,17 +151,19 @@ div.header div.menu nav > ul li span.mbr{
   display: none;
   position: absolute;
   width:219px;
-  height:73px;
   padding-top: 18px;
-  background: url('../images/submenu-products.png') no-repeat left 2px;
 }
 #submenu-products {
   top: 80px;
   left: -1px;
+  height:73px;
+  background: url('../images/submenu-products.png') no-repeat left 2px;
 }
 #submenu-technology {
   top: 80px;
   left: 590px;
+  height:105px;
+  background: url('../images/submenu-technology.png') no-repeat left 2px;
 }
 div.header div.menu nav > ul li.subitem a {
   float: none;
