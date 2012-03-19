@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
 	init_menu();
+
   var options = {
     success:  showResponse  // post-submit callback 
   }; 
@@ -46,5 +47,7 @@ function init_menu()
 function showResponse(responseText, statusText, xhr, $form) {
   if(responseText!="Sent") {
     alert(responseText);
+  } else {
+    alert("Message sent. Thank you!");
   }
 }
