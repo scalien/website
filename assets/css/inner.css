@@ -243,8 +243,15 @@ div.person img {
 	margin: 16px 10px 10px 0;
 }
 
+div.person img.person_tweet {
+    float:none;
+    margin:0 0 0 0;
+    height:20px;
+}
+
 div.person p {
 	text-align: left;
+	font-size: 14px;
 }
 
 table.services_tbl {
