@@ -65,7 +65,7 @@ div.header div.menu{
 	padding-top:29px;
 }
 
-div.header div.menu div.broken-line, div.footer div.broken-line{
+div.header div.menu div.broken-line, div.footer div.broken-line {
 	height:5px;
 	background: url('../images/menu_broken_line.png') no-repeat;
 }
@@ -113,6 +113,8 @@ div.header div.menu nav > ul li > a {
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   float: left;
+  height: 39px;
+  max-height: 39px;
 }
 
 div.header div.menu nav > ul li.hover > a, div.header div.menu nav ul li.active > a {
@@ -468,13 +470,19 @@ div.landing-columns {
 	height:200px;
 }
 
+.draft div.landing-columns {
+  height: 300px;
+}
+
 div.landing-columns img.icons {
-	margin-top: 80px;
+	margin: 0px auto;
+  margin-top: 80px;
+  display: block;
 }
 
 div.landing-columns div.col{
 	height:220px;
-	top: 141px;
+	top: 100px;
 	text-align:center;
 }
 
