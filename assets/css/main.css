@@ -26,6 +26,7 @@ div.clear {
 
 body {
 	background: url('../images/inner_bg.png') repeat;
+  zoom: 0.9;
 }
 
 dt {
@@ -92,7 +93,7 @@ div.header div.menu nav > ul > li {
 }
 
 div.header div.menu nav > ul li.hover, div.header div.menu nav ul li.active {
-	margin:0px 1px 0px 1px;
+	margin:0px 0px 0px 0px;
 	border:solid #000000 1px;
 }
 
@@ -289,6 +290,7 @@ div.inner-content {
 div.footer {
     clear:both;
 	height:402px;
+  margin-top: 80px;
 	background: url('../images/footer_bg.png') repeat-x top left;
 }
 
@@ -589,4 +591,7 @@ div.references img.last{
 #submenu-products {
   display: none !important;
   visibility: hidden !important;
+}
+#landing .footer {
+  margin-top: 0;
 }

@@ -60,7 +60,7 @@ div.inner-content h1, div.inner-content h2, div.inner-content h3 {
 	color:#21282b;
 	font-family:Tahoma;
 	font-weight:bold;
-    text-shadow: 0px 1px 1px #555;
+    text-shadow: 0px 1px 1px #999;
 }
 
 div.inner-content h1 {
@@ -71,13 +71,13 @@ div.inner-content h1 {
 
 div.inner-content h1.solo{
 	padding:35px 0px 20px 0px;
-    text-shadow: 0px 1px 1px #555;
+    text-shadow: 0px 1px 1px #999;
 }
 
 div.inner-content h2{
 	padding:36px 0px 6px 0px;
 	font-size:26px;
-    text-shadow: 0px 1px 1px #555;
+    text-shadow: 0px 1px 1px #999;
 }
 
 div.inner-content h2.center{
@@ -235,12 +235,16 @@ div.mission-statement {
 }
 
 div.person {
-	margin-bottom:20px;
+	margin-bottom:10px;
 }
 
 div.person img {
 	float:left;
-	margin: 16px 10px 10px 0;
+	margin: 6px 10px 10px 0;
+}
+
+div.person h3 {
+  padding-top: 10px;
 }
 
 div.person img.person_tweet {
@@ -256,7 +260,7 @@ div.person p {
 
 table.services_tbl {
 	width:100%;
-	text-shadow: 0px 0px 1px #555555;
+	text-shadow: 0px 0px 1px #999;
 	margin: 10px 0;
 }
 
