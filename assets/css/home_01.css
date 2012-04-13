@@ -2,6 +2,10 @@ body {
   background: url('../images/header_stripe_bg.png') top left;
   zoom: 1.0;
 }
+div.header div.menu nav > ul li.hover, div.header div.menu nav ul li.active {
+  margin:0px 1px 0px 1px;
+  border:solid #000000 1px;
+}
 
 div.footer {
   background: none;
