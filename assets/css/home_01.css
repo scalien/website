@@ -60,3 +60,9 @@ div.landing-column {
   top: 130px;
   right: 10px;
 }
+.downloadbutton2 {
+  position: absolute;
+  top: 530px;
+  right: 10px;
+  z-index: 10;
+}
