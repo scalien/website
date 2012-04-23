@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Scalien" />
     <meta name="author" content="Scalien" />
@@ -13,17 +13,17 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+<body>
     <div class="header inner-page">
-      <div class="wrap">
-        <a href="/"><img class="logo" src="assets/images/header_logo.png" alt="Scalien - Transactional NoSQL" /></a>
-        
-        <!-- Mainmenu -->
-        <div class="menu">
-          <div class="broken-line">
-          </div>
-          <nav id="mainmenu">
+        <div class="wrap">
+            <a href="/">
+                <img class="logo" src="assets/images/header_logo.png" alt="Scalien - Transactional NoSQL" /></a>
+            <!-- Mainmenu -->
+            <div class="menu">
+                <div class="broken-line">
+                </div>
+                <nav id="mainmenu">
             <ul>
               <li class="item">
                 <span class="mbl"></span>
@@ -59,134 +59,158 @@
               </li>
             </ul>
           </nav>
-          <div class="broken-line">
-          </div>
-        </div>  
-      </div>
-    </div>
-
-    <div class="inner-content">
-      <div class="wrap">     
-        <h1 class="solo">Paxos</h1>
-        <p>
-        The Paxos algorithm was invented by computer scientist Leslie Lamport  in 1989.
-        The algorithm is a way for computers in a distributed database like ScalienDB to agree on what to do next.
-        </p>
-        <p>
-        It is best to think of <span class="highlight">Paxos</span> as a way to replicate a database command between the servers in a distributed database.
-        ScalienDB uses subsequent rounds of Paxos to replicate database commands.
-        This sequence of commands is called a database log. <span class="highlight">Paxos guarantees that all servers receive the same log.</span>
-        </p>
-        <p>
-        Since the local database on each server itself is simply the subsequent execution of these log commands, the use of Paxos guarantees that all servers have the same local database.
-        This is called <span class="highlight">Immediate Consistency</span> to differentiate it from Eventual Consistency, a family of different replication protocols employed by other NoSQL databases where data can go out of sync.
-        </p>
-        <p>
-        Eventually Consistent solutions may sound acceptable at first, but they cause problems down the road as the application using the distributed database matures.
-        Reflecting on Google’s early days of NoSQL development, Senior Google engineer Sean Quinlan said:</p>
-        <p>
-        “Consistency was designed to be very loose. In retrospect, that turned out to be a lot more painful than anyone expected… At the time, it must have seemed like a good idea, but in retrospect I think… it proved to be more painful than it was worth.”
-        </p>
-        <p>
-        The Paxos algorithm lay dormant for a decade but was popularized when Google started using it in their internal distributed database technologies.
-        <span class="highlight">Paxos is also used in Google's latest Megastore database.</span>
-        </p>
-        
-        <h2>Paxos in ScalienDB</h2>
-        <p>
-        In ScalienDB, we use Paxos for <span class="highlight">replicating database schema commands between Controllers, and data commands between Shard Servers</span>.
-        Controllers use regular majority Paxos, which means <span class="highlight">two out of five Controllers can go down without performance degradation</span>.
-        Shard Servers use a variation of Paxos called TotalPaxos.
-        TotalPaxos  requires all nodes for replication to succeed. If a Shard Server goes offline, it is removed from its Replication Set by the Controllers.
-        </p>
-        <p>
-        Additionally, the ScalienDB Paxos implementation contains a <span class="highlight">performance optimization called MultiPaxos</span>.
-        MultiPaxos reduces the number of roundtrips and the number of disk writes necessary for a Paxos round from two to one, resulting in a <span class="highlight">100% speedup</span>.
-        </p>
-        <p>
-        With these optimizations, Paxos in ScalienDB is very fast for LAN replication, beating most other NoSQL databases in benchmarks.
-        </p>
-        <div class="clear">
-          <br/><br/>
-        </div>
-      </div>      
-      <div class="footer">
-  			<div class="wrap">
-  				<div class="column-container">
-            <div class="prod">
-              <h5>Products</h5>
-              <ul class="footer-nav upper">
-                <li><a href="products">ScalienDB</a></li>
-                <li><a href="downloads">Downloads</a></li>
-                <li><a href="https://github.com/scalien/scaliendb/wiki">Documentation</a></li>
-              </ul>
-              <h5>Services</h5>
-              <ul class="footer-nav">
-                <li><a href="services">Services</a></li>
-                <li><a href="services/fees">Support Fees</a></li>
-              </ul>
-            </div>
-            <div class="tech">
-              <h5>Technology</h5>						
-              <ul class="footer-nav upper">
-                <li><a href="technology">Overview</a></li>
-                <li><a href="technology/paxos">Paxos</a></li>
-                <li><a href="technology/whitepapers">Whitepapers</a></li>
-              </ul>
-              <h5>Company</h5>
-              <ul class="footer-nav">
-                <li><a href="company">About</a></li>
-              </ul>
-            </div>
-  					<div class="social">
-  						<h5>Get social</h5>
-  						<div class="icons">
-  							<a href="https://twitter.com/scalien"><img src="assets/images/social_tw.png" alt=""/></a>
-  							<a href="https://www.facebook.com/pages/Scalien/236462826418221"><img src="assets/images/social_fb.png" alt=""/></a>
-  						</div>
-  					</div>
-  					<div class="contact">
-              <h5>Contact</h5>
-              <form action="mail.php" method="post" enctype="text/plain" target="_blank">
-                <div class="contact-form">
-                  <div class="col-left">
-                    <input type="text" placeholder="Name" name="Name"/>
-                    <input type="email" placeholder="Email" name="Email"/>
-                  </div>
-                  <div class="col-right">
-                    <textarea placeholder="Message" name="Message"></textarea>
-                    <span class="button">
-                      <span class="mbl"></span>
-                        <a target="_self" href="#">Send</a>
-                      <span class="mbr"></span>
-                    </span>
-                  </div>
-                  <div class="clear"></div>
+                <div class="broken-line">
                 </div>
-              </form>
             </div>
-            <div class="clear"></div>
-  				</div>
-  				<div class="broken-line">
-  				</div>
-  				<p class="copyright">Copyright &copy; 2012 Scalien. All rights reserved</p>
         </div>
-      </div>
+    </div>
+    <div class="inner-content">
+        <div class="wrap">
+            <h1 class="solo">
+                Paxos</h1>
+            <p>
+                The Paxos algorithm was invented by computer scientist Leslie Lamport in 1989. The
+                algorithm is a way for computers in a distributed database like ScalienDB to agree
+                on what to do next.
+            </p>
+            <p>
+                It is best to think of <span class="highlight">Paxos</span> as a way to replicate
+                a database command between the servers in a distributed database. ScalienDB uses
+                subsequent rounds of Paxos to replicate database commands. This sequence of commands
+                is called a database log. <span class="highlight">Paxos guarantees that all servers
+                receive the same log.</span>
+            </p>
+            <p>
+                Since the local database on each server itself is simply the subsequent execution
+                of these log commands, the use of Paxos guarantees that all servers have the same
+                local database. This is called <span class="highlight">Immediate Consistency</span>
+                to differentiate it from Eventual Consistency, a family of different replication
+                protocols employed by other NoSQL databases where data can go out of sync.
+            </p>
+            <p>
+                Eventually Consistent solutions may sound acceptable at first, but they cause problems
+                down the road as the application using the distributed database matures. Reflecting
+                on Google’s early days of NoSQL development, Senior Google engineer Sean Quinlan
+                said:</p>
+            <p>
+                “Consistency was designed to be very loose. In retrospect, that turned out to be
+                a lot more painful than anyone expected… At the time, it must have seemed like a
+                good idea, but in retrospect I think… it proved to be more painful than it was worth.”
+            </p>
+            <p>
+                The Paxos algorithm lay dormant for a decade but was popularized when Google started
+                using it in their internal distributed database technologies. <span class="highlight">
+                Paxos is also used in Google's latest Megastore database.</span>
+            </p>
+            <h2>
+                Paxos in ScalienDB</h2>
+            <p>
+                In ScalienDB, we use Paxos for <span class="highlight">replicating database schema commands
+                between Controllers, and data commands between Shard Servers</span>. Controllers
+                use regular majority Paxos, which means <span class="highlight">two out of five Controllers
+                can go down without performance degradation</span>. Shard Servers use a variation
+                of Paxos called TotalPaxos. TotalPaxos requires all nodes for replication to succeed.
+                If a Shard Server goes offline, it is removed from its Replication Set by the Controllers.
+            </p>
+            <p>
+                Additionally, the ScalienDB Paxos implementation contains a <span class="highlight">
+                performance optimization called MultiPaxos</span>. MultiPaxos reduces the number
+                of roundtrips and the number of disk writes necessary for a Paxos round from two
+                to one, resulting in a <span class="highlight">100% speedup</span>.
+            </p>
+            <p>
+                With these optimizations, Paxos in ScalienDB is very fast for LAN replication, beating
+                most other NoSQL databases in benchmarks.
+            </p>
+            <div class="clear">
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="wrap">
+                <div class="column-container">
+                    <div class="prod">
+                        <h5>
+                            Products</h5>
+                        <ul class="footer-nav upper">
+                            <li><a href="products">ScalienDB</a></li>
+                            <li><a href="downloads">Downloads</a></li>
+                            <li><a href="https://github.com/scalien/scaliendb/wiki">Documentation</a></li>
+                        </ul>
+                        <h5>
+                            Services</h5>
+                        <ul class="footer-nav">
+                            <li><a href="services">Services</a></li>
+                            <li><a href="services/fees">Support Fees</a></li>
+                        </ul>
+                    </div>
+                    <div class="tech">
+                        <h5>
+                            Technology</h5>
+                        <ul class="footer-nav upper">
+                            <li><a href="technology">Overview</a></li>
+                            <li><a href="technology/paxos">Paxos</a></li>
+                            <li><a href="technology/whitepapers">Whitepapers</a></li>
+                        </ul>
+                        <h5>
+                            Company</h5>
+                        <ul class="footer-nav">
+                            <li><a href="company">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h5>
+                            Get social</h5>
+                        <div class="icons">
+                            <a href="https://twitter.com/scalien">
+                                <img src="assets/images/social_tw.png" alt="" /></a> <a href="https://www.facebook.com/pages/Scalien/236462826418221">
+                                    <img src="assets/images/social_fb.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h5>
+                            Contact</h5>
+                        <form action="mail.php" method="post" enctype="text/plain" target="_blank">
+                        <div class="contact-form">
+                            <div class="col-left">
+                                <input type="text" placeholder="Name" name="Name" />
+                                <input type="email" placeholder="Email" name="Email" />
+                            </div>
+                            <div class="col-right">
+                                <textarea placeholder="Message" name="Message"></textarea>
+                                <span class="button"><span class="mbl"></span><a target="_self" href="#">Send</a> <span
+                                    class="mbr"></span></span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="broken-line">
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2012 Scalien. All rights reserved</p>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="assets/plugins/jquery/jquery.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery.hoverIntent.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery.form.js"></script>
     <script type="text/javascript" src="assets/js/common_func.js"></script>
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9801399-1']);
-      _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9801399-1']);
+        _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
     </script>
-  </body>
+</body>
 </html>

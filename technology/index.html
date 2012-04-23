@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Scalien" />
     <meta name="author" content="Scalien" />
@@ -13,17 +13,17 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+<body>
     <div class="header inner-page">
-      <div class="wrap">
-        <a href="/"><img class="logo" src="assets/images/header_logo.png" alt="Scalien - Transactional NoSQL" /></a>
-        
-        <!-- Mainmenu -->
-        <div class="menu">
-          <div class="broken-line">
-          </div>
-          <nav id="mainmenu">
+        <div class="wrap">
+            <a href="/">
+                <img class="logo" src="assets/images/header_logo.png" alt="Scalien - Transactional NoSQL" /></a>
+            <!-- Mainmenu -->
+            <div class="menu">
+                <div class="broken-line">
+                </div>
+                <nav id="mainmenu">
             <ul>
               <li class="item">
                 <span class="mbl"></span>
@@ -59,191 +59,226 @@
               </li>
             </ul>
           </nav>
-          <div class="broken-line">
-          </div>
-        </div>  
-      </div>
+                <div class="broken-line">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="inner-content">
-      <div class="wrap">
-      <h1 class="solo">Technology Overview</h1>
-        <div class="column-container">
-          <div class="column intro">
-            <p>
-            ScalienDB takes some of the best ideas of distributed systems and combines them with the dependability of SQL databases.
-            </p>
-          </div>
-          <div class="column">
-            <h2>Distributed Database</h2>
-            <p>
-            There are two key aspects to distributed databases. The first is reliable data replication, the second is scalability.
-            </p>
-            <p>
-            To assure a SQL level of data integrity ScalienDB uses <a href="technology/paxos">Paxos</a> to replicate data. 
-            </p>
-            <p>
-            With respect to scalability, ScalienDB uses horizontal scalability. This means you can add commodity servers to:
-            </p>
-            <ul>
-              <li>Increase storage space</li>
-              <li>Increase write throughput</li>
-              <li>Increase read throughput</li>
-            </ul>
-            <p>
-            ScalienDB supports all three scalability criteria by the addition of any number of Shard Servers on the fly.
-            Data is split into shards and then distributed between Shard Servers transparently, maintaining the appearance of a single database.
-            </p>
-
-            <h2>Controllers</h2>
-            <p>
-            The <span class="highlight">Controllers act as the brain</span> of the ScalienDB cluster. They communicate among themselves to ensure the fault-tolerance and high-availability of the entire distributed database system.
-            Shard Servers and their membership in Replication Sets are managed by the Controllers.
-            Internally, the controller nodes use the Paxos protocol to guarantee that the ScalienDB cluster is always in a well-defined, consistent state without the possibility of a split-brain scenario.
-            The controllers handle the following functionality:
-            </p>
-            <ul>
-              <li>Store the database schema (databases and tables)</li>
-              <li>Manage membership of shard servers</li>
-              <li>Assign Shard Servers into Replication Sets</li>
-              <li>Migrate shards across Replication Sets</li>
-            </ul>
-            <p>
-            You can use one, three, five or more Controllers in the ScalienDB setup depending on the level of fault-tolerance desired.
-            We recommend to use one Controller in test environments and <span class="highlight">five Controllers in production</span>.
-            </p>
-
-            <h2>Clients</h2>
-            <p>
-            The client library is Smart Client. You can quickly write ScalienDB applications without worrying about the distributed nature of the database.
-            The client library is fully aware of the state of the ScalienDB cluster and <span class="highlight">automatically handles failover events</span>.
-            The client supports distributing reads inside Replica Sets for <span class="highlight">linear read scalability</span> and distributed writes across different Replicata Sets for <span class="highlight">linear write scalability</span>.
-            Additionally, you can batch commands for maximum throughput.
-            ScalienDB client libraries are available for <span class="highlight">Java, C# and Python</span>. Each client library adheres to the idioms of its language.
-            </p>
-            <div class="clear"></div>
-          </div>
-          <div class="column">
-            <h2>Data Model</h2>
-            <p>
-            ScalienDB is a NoSQL database with a <span class="highlight">key-value data model</span>.
-            At the highest level data is organized into databases and then into tables, just like in traditional SQL databases.
-            Tables are namespaces for key-value data, which may be split into several shards.
-            Shards are mapped into Replica Sets and stored on Shard Servers.
-            Keys and values in ScalienDB are not strongly typed, which allows for maximum flexibility when developing applications.
-            Keys are limited to a length of 64K while values are virtually unlimited in length. This means ScalienDB can be used for a wide variety of data management tasks.
-            This architecture combines the best of relational and NoSQL models: it features databases and tables to organize data while employing a simple, flexible key-value model.
-            </p>
-
-            <h2>Shard servers</h2>
-            <p>
-            The <span class="highlight">Shard Servers are the workhorses</span> of the distributed ScalienDB architecture.
-            Shard servers are assigned into Replica Sets by Controllers for replication.
-            Like Controllers, the Paxos algorithm is employed to ensure that the data is always up to date.
-            A <span class="highlight">high-performance linear on-disk storage engine</span> is used to store data on disk.
-            This storage engine is the best of both worlds. It combines technologies from traditional architectures, such as <span class="highlight">transactional redo logs</span> to eliminate any possibility of data loss, and cutting-edge technologies such as linearized disk I/O, introduced by Google's Bigtable system.
-            This combination of technologies assures that ScalienDB delivers the dependability of SQL databases while opening the door to unlimited data and throughput scaling on conventional commodity hardware.
-            </p>
-
-            <h2>Management console</h2>
-            <p>
-            Administrative tasks are performed on the web-based Management Console using a browser.
-            The management console is fully featured and supports all ScalienDB operations:</p>
-            <ul>
-              <li>Monitoring the cluster state</li>
-              <li>Monitoring catchup and shard migration progress</li>
-              <li>Create, rename, delete databases</li>
-              <li>Create, rename, delete, truncate tables</li>
-              <li>Create, delete Replication Sets</li>
-              <li>Add, remove Shard Servers from Replication Sets</li>
-              <li>Shard splitting and shard migration</li>
-            </ul>
-            <p>
-            ScalienDB has a built-in HTTP server for performing management operations.
-            This allows you to integrate these tasks into their broader management suite using the powerful ScalienDB <span class="highlight">JSON API</span>.
-            </p>
-            <div class="clear"></div>
-          </div>
-        </div>
-        <div class="clear"><br/></div>
-      </div>
-
-      <div class="footer">
-  			<div class="wrap">
-  				<div class="column-container">
-            <div class="prod">
-              <h5>Products</h5>
-              <ul class="footer-nav upper">
-                <li><a href="products">ScalienDB</a></li>
-                <li><a href="downloads">Downloads</a></li>
-                <li><a href="https://github.com/scalien/scaliendb/wiki">Documentation</a></li>
-              </ul>
-              <h5>Services</h5>
-              <ul class="footer-nav">
-                <li><a href="services">Services</a></li>
-                <li><a href="services/fees">Support Fees</a></li>
-              </ul>
-            </div>
-            <div class="tech">
-              <h5>Technology</h5>						
-              <ul class="footer-nav upper">
-                <li><a href="technology">Overview</a></li>
-                <li><a href="technology/paxos">Paxos</a></li>
-                <li><a href="technology/whitepapers">Whitepapers</a></li>
-              </ul>
-              <h5>Company</h5>
-              <ul class="footer-nav">
-                <li><a href="company">About</a></li>
-              </ul>
-            </div>
-  					<div class="social">
-  						<h5>Get social</h5>
-  						<div class="icons">
-  							<a href="https://twitter.com/scalien"><img src="assets/images/social_tw.png" alt=""/></a>
-  							<a href="https://www.facebook.com/pages/Scalien/236462826418221"><img src="assets/images/social_fb.png" alt=""/></a>
-  						</div>
-  					</div>
-  					<div class="contact">
-              <h5>Contact</h5>
-              <form action="mail.php" method="post" enctype="text/plain" target="_blank">
-                <div class="contact-form">
-                  <div class="col-left">
-                    <input type="text" placeholder="Name" name="Name"/>
-                    <input type="email" placeholder="Email" name="Email"/>
-                  </div>
-                  <div class="col-right">
-                    <textarea placeholder="Message" name="Message"></textarea>
-                    <span class="button">
-                      <span class="mbl"></span>
-                        <a target="_self" href="#">Send</a>
-                      <span class="mbr"></span>
-                    </span>
-                  </div>
-                  <div class="clear"></div>
+        <div class="wrap">
+            <h1 class="solo">
+                Technology Overview</h1>
+            <div class="column-container">
+                <div class="column intro">
+                    <p>
+                        ScalienDB takes some of the best ideas of distributed systems and combines them
+                        with the dependability of SQL databases.
+                    </p>
                 </div>
-              </form>
+                <div class="column">
+                    <h2>
+                        Distributed Database</h2>
+                    <p>
+                        There are two key aspects to distributed databases. The first is reliable data replication,
+                        the second is scalability.
+                    </p>
+                    <p>
+                        To assure a SQL level of data integrity ScalienDB uses <a href="technology/paxos">Paxos</a>
+                        to replicate data.
+                    </p>
+                    <p>
+                        With respect to scalability, ScalienDB uses horizontal scalability. This means you
+                        can add commodity servers to:
+                    </p>
+                    <ul>
+                        <li>Increase storage space</li>
+                        <li>Increase write throughput</li>
+                        <li>Increase read throughput</li>
+                    </ul>
+                    <p>
+                        ScalienDB supports all three scalability criteria by the addition of any number
+                        of Shard Servers on the fly. Data is split into shards and then distributed between
+                        Shard Servers transparently, maintaining the appearance of a single database.
+                    </p>
+                    <h2>
+                        Controllers</h2>
+                    <p>
+                        The <span class="highlight">Controllers act as the brain</span> of the ScalienDB
+                        cluster. They communicate among themselves to ensure the fault-tolerance and high-availability
+                        of the entire distributed database system. Shard Servers and their membership in
+                        Replication Sets are managed by the Controllers. Internally, the controller nodes
+                        use the Paxos protocol to guarantee that the ScalienDB cluster is always in a well-defined,
+                        consistent state without the possibility of a split-brain scenario. The controllers
+                        handle the following functionality:
+                    </p>
+                    <ul>
+                        <li>Store the database schema (databases and tables)</li>
+                        <li>Manage membership of shard servers</li>
+                        <li>Assign Shard Servers into Replication Sets</li>
+                        <li>Migrate shards across Replication Sets</li>
+                    </ul>
+                    <p>
+                        You can use one, three, five or more Controllers in the ScalienDB setup depending
+                        on the level of fault-tolerance desired. We recommend to use one Controller in test
+                        environments and <span class="highlight">five Controllers in production</span>.
+                    </p>
+                    <h2>
+                        Clients</h2>
+                    <p>
+                        The client library is Smart Client. You can quickly write ScalienDB applications
+                        without worrying about the distributed nature of the database. The client library
+                        is fully aware of the state of the ScalienDB cluster and <span class="highlight">automatically
+                        handles failover events</span>. The client supports distributing reads inside
+                        Replica Sets for <span class="highlight">linear read scalability</span> and distributed
+                        writes across different Replicata Sets for <span class="highlight">linear write scalability</span>.
+                        Additionally, you can batch commands for maximum throughput. ScalienDB client libraries
+                        are available for <span class="highlight">Java, C# and Python</span>. Each client
+                        library adheres to the idioms of its language.
+                    </p>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="column">
+                    <h2>
+                        Data Model</h2>
+                    <p>
+                        ScalienDB is a NoSQL database with a <span class="highlight">key-value data model</span>.
+                        At the highest level data is organized into databases and then into tables, just
+                        like in traditional SQL databases. Tables are namespaces for key-value data, which
+                        may be split into several shards. Shards are mapped into Replica Sets and stored
+                        on Shard Servers. Keys and values in ScalienDB are not strongly typed, which allows
+                        for maximum flexibility when developing applications. Keys are limited to a length
+                        of 64K while values are virtually unlimited in length. This means ScalienDB can
+                        be used for a wide variety of data management tasks. This architecture combines
+                        the best of relational and NoSQL models: it features databases and tables to organize
+                        data while employing a simple, flexible key-value model.
+                    </p>
+                    <h2>
+                        Shard servers</h2>
+                    <p>
+                        The <span class="highlight">Shard Servers are the workhorses</span> of the distributed
+                        ScalienDB architecture. Shard servers are assigned into Replica Sets by Controllers
+                        for replication. Like Controllers, the Paxos algorithm is employed to ensure that
+                        the data is always up to date. A <span class="highlight">high-performance linear on-disk
+                        storage engine</span> is used to store data on disk. This storage engine is
+                        the best of both worlds. It combines technologies from traditional architectures,
+                        such as <span class="highlight">transactional redo logs</span> to eliminate any
+                        possibility of data loss, and cutting-edge technologies such as linearized disk
+                        I/O, introduced by Google's Bigtable system. This combination of technologies assures
+                        that ScalienDB delivers the dependability of SQL databases while opening the door
+                        to unlimited data and throughput scaling on conventional commodity hardware.
+                    </p>
+                    <h2>
+                        Management console</h2>
+                    <p>
+                        Administrative tasks are performed on the web-based Management Console using a browser.
+                        The management console is fully featured and supports all ScalienDB operations:</p>
+                    <ul>
+                        <li>Monitoring the cluster state</li>
+                        <li>Monitoring catchup and shard migration progress</li>
+                        <li>Create, rename, delete databases</li>
+                        <li>Create, rename, delete, truncate tables</li>
+                        <li>Create, delete Replication Sets</li>
+                        <li>Add, remove Shard Servers from Replication Sets</li>
+                        <li>Shard splitting and shard migration</li>
+                    </ul>
+                    <p>
+                        ScalienDB has a built-in HTTP server for performing management operations. This
+                        allows you to integrate these tasks into their broader management suite using the
+                        powerful ScalienDB <span class="highlight">JSON API</span>.
+                    </p>
+                    <div class="clear">
+                    </div>
+                </div>
             </div>
-            <div class="clear"></div>
-  				</div>
-  				<div class="broken-line">
-  				</div>
-  				<p class="copyright">Copyright &copy; 2012 Scalien. All rights reserved</p>
+            <div class="clear">
+                <br />
+            </div>
         </div>
-      </div>    
+        <div class="footer">
+            <div class="wrap">
+                <div class="column-container">
+                    <div class="prod">
+                        <h5>
+                            Products</h5>
+                        <ul class="footer-nav upper">
+                            <li><a href="products">ScalienDB</a></li>
+                            <li><a href="downloads">Downloads</a></li>
+                            <li><a href="https://github.com/scalien/scaliendb/wiki">Documentation</a></li>
+                        </ul>
+                        <h5>
+                            Services</h5>
+                        <ul class="footer-nav">
+                            <li><a href="services">Services</a></li>
+                            <li><a href="services/fees">Support Fees</a></li>
+                        </ul>
+                    </div>
+                    <div class="tech">
+                        <h5>
+                            Technology</h5>
+                        <ul class="footer-nav upper">
+                            <li><a href="technology">Overview</a></li>
+                            <li><a href="technology/paxos">Paxos</a></li>
+                            <li><a href="technology/whitepapers">Whitepapers</a></li>
+                        </ul>
+                        <h5>
+                            Company</h5>
+                        <ul class="footer-nav">
+                            <li><a href="company">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h5>
+                            Get social</h5>
+                        <div class="icons">
+                            <a href="https://twitter.com/scalien">
+                                <img src="assets/images/social_tw.png" alt="" /></a> <a href="https://www.facebook.com/pages/Scalien/236462826418221">
+                                    <img src="assets/images/social_fb.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h5>
+                            Contact</h5>
+                        <form action="mail.php" method="post" enctype="text/plain" target="_blank">
+                        <div class="contact-form">
+                            <div class="col-left">
+                                <input type="text" placeholder="Name" name="Name" />
+                                <input type="email" placeholder="Email" name="Email" />
+                            </div>
+                            <div class="col-right">
+                                <textarea placeholder="Message" name="Message"></textarea>
+                                <span class="button"><span class="mbl"></span><a target="_self" href="#">Send</a> <span
+                                    class="mbr"></span></span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="broken-line">
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2012 Scalien. All rights reserved</p>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="assets/plugins/jquery/jquery.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery.hoverIntent.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery.form.js"></script>
     <script type="text/javascript" src="assets/js/common_func.js"></script>
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9801399-1']);
-      _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9801399-1']);
+        _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
     </script>
-  </body>
+</body>
 </html>
