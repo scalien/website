@@ -120,7 +120,7 @@ div.header div.menu nav > ul li > a
     text-decoration: none;
     display: inline-block;
     padding: 10px 0px;
-    width: 157px;
+    width: 105px;
     text-shadow: 1px 1px 1px #222222;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -185,7 +185,7 @@ div.header div.menu nav > ul li span.mbr
 #submenu-technology
 {
     top: 80px;
-    left: 590px;
+    left: 577px;
     height: 105px;
     background: url('../images/submenu-technology.png') no-repeat left 2px;
 }
