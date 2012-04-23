@@ -73,42 +73,42 @@
       <div class="wrap">     
         <h1 class="solo">Paxos</h1>
         <p>
-        The Paxos algorithm was invented by computer scientist Leslie Lamport  in the 1990s.
+        The Paxos algorithm was invented by computer scientist Leslie Lamport  in 1989.
         The algorithm is a way for computers in a distributed database like ScalienDB to agree on what to do next.
         </p>
         <p>
-        It is best to think of <span class="highlight">Paxos</span> as a way to replicate a database command between the servers in the distributed database.
-        ScalienDB uses subsequent rounds of Paxos to replicate subsequent database commands.
-        This sequence of commands is called a database log. Paxos guarantees that all servers receive the same log.
+        It is best to think of <span class="highlight">Paxos</span> as a way to replicate a database command between the servers in a distributed database.
+        ScalienDB uses subsequent rounds of Paxos to replicate database commands.
+        This sequence of commands is called a database log. <span class="highlight">Paxos guarantees that all servers receive the same log.</span>
         </p>
         <p>
         Since the local database on each server itself is simply the subsequent execution of these log commands, the use of Paxos guarantees that all servers have the same local database.
-        This is called <span class="highlight">Immediate Consistency</span> to differentiate from Eventual Consistency, a family of different replication protocols employed by other NoSQL databases where data can go out of sync on servers.
+        This is called <span class="highlight">Immediate Consistency</span> to differentiate it from Eventual Consistency, a family of different replication protocols employed by other NoSQL databases where data can go out of sync.
         </p>
         <p>
         Eventually Consistent solutions may sound acceptable at first, but they cause problems down the road as the application using the distributed database matures.
-        Senior Google engineer Sean Quinlan commenting on Google’s early use of Eventual Consistency:</p>
+        Reflecting on Google’s early days of NoSQL development, Senior Google engineer Sean Quinlan said:</p>
         <p>
         “Consistency was designed to be very loose. In retrospect, that turned out to be a lot more painful than anyone expected… At the time, it must have seemed like a good idea, but in retrospect I think… it proved to be more painful than it was worth.”
         </p>
         <p>
-        The Paxos algorithm lay dormant for a decade and was then popularized when Google started using it in their internal distributed database technologies.
+        The Paxos algorithm lay dormant for a decade but was popularized when Google started using it in their internal distributed database technologies.
         <span class="highlight">Paxos is also used in Google's latest Megastore database.</span>
         </p>
         
         <h2>Paxos in ScalienDB</h2>
         <p>
-        In ScalienDB, we use Paxos for replicating database schema commands between Controllers, and data commands between Shard Servers.
-        Controllers use regular majority Paxos, which means <span class="highlight">two out of five Controllers can go down without problems</span>.
+        In ScalienDB, we use Paxos for <span class="highlight">replicating database schema commands between Controllers, and data commands between Shard Servers</span>.
+        Controllers use regular majority Paxos, which means <span class="highlight">two out of five Controllers can go down without performance degradation</span>.
         Shard Servers use a variation of Paxos called TotalPaxos.
-        TotalPaxos  requires all nodes for replication to succeed, because when a Shard Server goes offline and hence would block TotalPaxos, it is removed from its Replication Set by the Controllers.
+        TotalPaxos  requires all nodes for replication to succeed. If a Shard Server goes offline, it is removed from its Replication Set by the Controllers.
         </p>
         <p>
         Additionally, the ScalienDB Paxos implementation contains a <span class="highlight">performance optimization called MultiPaxos</span>.
         MultiPaxos reduces the number of roundtrips and the number of disk writes necessary for a Paxos round from two to one, resulting in a <span class="highlight">100% speedup</span>.
         </p>
         <p>
-        With these optimizations, Paxos in ScalienDB is very fast for LAN replication. <span class="highlight">ScalienDB beats most other NoSQL databases in benchmarks</span>, even when going up against Eventual Consistent competitors.
+        With these optimizations, Paxos in ScalienDB is very fast for LAN replication, beating most other NoSQL databases in benchmarks.
         </p>
         <div class="clear">
           <br/><br/>
