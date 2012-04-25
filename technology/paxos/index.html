@@ -76,8 +76,7 @@
     </div>
     <div class="inner-content">
         <div class="wrap">
-            <h1 class="solo">
-                Paxos</h1>
+            <h1 class="solo">Paxos</h1>
             <p>
                 The Paxos algorithm was invented by computer scientist Leslie Lamport in 1989. The
                 algorithm is a way for computers in a distributed database like ScalienDB to agree
@@ -103,25 +102,25 @@
                 on Google’s early days of NoSQL development, Senior Google engineer Sean Quinlan
                 said:</p>
             <p>
-                “Consistency was designed to be very loose. In retrospect, that turned out to be
+                <em>“Consistency was designed to be very loose. In retrospect, that turned out to be
                 a lot more painful than anyone expected… At the time, it must have seemed like a
-                good idea, but in retrospect I think… it proved to be more painful than it was worth.”
+                good idea, but in retrospect I think… it proved to be more painful than it was worth.”</em>
             </p>
             <p>
                 The Paxos algorithm lay dormant for a decade but was popularized when Google started
                 using it in their internal distributed database technologies. <span class="highlight">
                 Paxos is also used in Google's latest Megastore database.</span>
             </p>
-            <h2>
-                Paxos in ScalienDB</h2>
+            <h2>Paxos in ScalienDB</h2>
             <p>
                 In ScalienDB, we use Paxos for <span class="highlight">replicating database schema commands
                 between Controllers, and data commands between Shard Servers</span>. Controllers
                 use regular majority Paxos, which means <span class="highlight">two out of five Controllers
                 can go down without performance degradation</span>. Shard Servers use a variation
                 of Paxos called TotalPaxos. TotalPaxos requires all nodes for replication to succeed.
-                If a Shard Server goes offline, it is removed from its Replication Set by the Controllers.
+                If a Shard Server goes offline, it is removed from its Replica Set by the Controllers.
             </p>
+            <h2>MultiPaxos</h2>
             <p>
                 Additionally, the ScalienDB Paxos implementation contains a <span class="highlight">
                 performance optimization called MultiPaxos</span>. MultiPaxos reduces the number
@@ -132,14 +131,11 @@
                 With these optimizations, Paxos in ScalienDB is very fast for LAN replication, beating
                 most other NoSQL databases in benchmarks.
             </p>
-            <div class="clear">
-                <br />
-                <br />
-            </div>
+            <div class="clear"></div>
         </div>
         <div class="footer">
             <div class="wrap">
-<div class="column-container">
+                <div class="column-container">
                     <div class="prod">
                         <h5>Products</h5>
                         <ul class="footer-nav upper">
