@@ -224,8 +224,12 @@
                     <p class="code">
                         cd scaliendb<br />
                         make<br />
-                        make pythonlib # optional<br />
-                        make javalib &nbsp # optional
+                        # optional: install Python library, requires python-devel<br />
+                        sudo apt-get install python-dev<br />
+                        make pythonlib<br />
+                        # optional: install Java library, requires JDK (not just JRE)<br />
+                        sudo apt-get install sun-java6-jdk<br />
+                        make javalib
                     </p>
                     <p>
                         On <strong>Windows</strong>, use the supplied Visual Studio project files.
@@ -237,7 +241,7 @@
                     <p>
                         Launch the server with a specified configuration file:
                         <p class="code">
-                            ./scaliendb test/control/single/scaliendb.conf</p>
+                            ./bin/scaliendb test/control/single/scaliendb.conf</p>
                         <p>
                             Once the server is up running, connect to <strong>http://localhost:8080/webadmin</strong>
                             to see the Standard Management Console.</p>
