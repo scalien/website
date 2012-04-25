@@ -93,7 +93,7 @@
                         the second is scalability.
                     </p>
                     <p>
-                        To assure a SQL level of data integrity ScalienDB uses <a href="technology/paxos">Paxos</a>
+                        To assure an SQL level of data integrity ScalienDB uses <a href="technology/paxos">Paxos</a>
                         to replicate data.
                     </p>
                     <p>
@@ -116,7 +116,7 @@
                         The <span class="highlight">Controllers act as the brain</span> of the ScalienDB
                         cluster. They communicate among themselves to ensure the fault-tolerance and high-availability
                         of the entire distributed database system. Shard Servers and their membership in
-                        Replication Sets are managed by the Controllers. Internally, the controller nodes
+                        Replica Sets are managed by the Controllers. The controller nodes
                         use the Paxos protocol to guarantee that the ScalienDB cluster is always in a well-defined,
                         consistent state without the possibility of a split-brain scenario. The controllers
                         handle the following functionality:
@@ -124,8 +124,8 @@
                     <ul>
                         <li>Store the database schema (databases and tables)</li>
                         <li>Manage membership of shard servers</li>
-                        <li>Assign Shard Servers into Replication Sets</li>
-                        <li>Migrate shards across Replication Sets</li>
+                        <li>Assign Shard Servers into Replica Sets</li>
+                        <li>Migrate shards across Replica Sets</li>
                     </ul>
                     <p>
                         You can use one, three, five or more Controllers in the ScalienDB setup depending
@@ -140,7 +140,7 @@
                         is fully aware of the state of the ScalienDB cluster and <span class="highlight">automatically
                         handles failover events</span>. The client supports distributing reads inside
                         Replica Sets for <span class="highlight">linear read scalability</span> and distributed
-                        writes across different Replicata Sets for <span class="highlight">linear write scalability</span>.
+                        writes across different Replica Sets for <span class="highlight">linear write scalability</span>.
                         Additionally, you can batch commands for maximum throughput. ScalienDB client libraries
                         are available for <span class="highlight">Java, C# and Python</span>. Each client
                         library adheres to the idioms of its language.
@@ -167,8 +167,8 @@
                         Shard servers</h2>
                     <p>
                         The <span class="highlight">Shard Servers are the workhorses</span> of the distributed
-                        ScalienDB architecture. Shard servers are assigned into Replica Sets by Controllers
-                        for replication. Like Controllers, the Paxos algorithm is employed to ensure that
+                        ScalienDB architecture. Shard servers are assigned into Replica Sets by Controllers.
+                        Like Controllers, the Paxos algorithm is employed to ensure that
                         the data is always up to date. A <span class="highlight">high-performance linear on-disk
                         storage engine</span> is used to store data on disk. This storage engine is
                         the best of both worlds. It combines technologies from traditional architectures,
@@ -188,8 +188,8 @@
                         <li>Monitoring catchup and shard migration progress</li>
                         <li>Create, rename, delete databases</li>
                         <li>Create, rename, delete, truncate tables</li>
-                        <li>Create, delete Replication Sets</li>
-                        <li>Add, remove Shard Servers from Replication Sets</li>
+                        <li>Create, delete Replica Sets</li>
+                        <li>Add, remove Shard Servers from Replica Sets</li>
                         <li>Shard splitting and shard migration</li>
                     </ul>
                     <p>
