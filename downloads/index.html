@@ -224,10 +224,14 @@
                     <p class="code">
                         cd scaliendb<br />
                         make<br />
-                        # optional: install Python library, requires python-devel<br />
+                        <br/ >
+                        # optional: install Python library<br />
+                        # requires python-devel<br />
                         sudo apt-get install python-dev<br />
                         make pythonlib<br />
-                        # optional: install Java library, requires JDK (not just JRE)<br />
+                        <br/ >
+                        # optional: install Java library<br />
+                        # requires JDK (not just JRE)<br />
                         sudo apt-get install sun-java6-jdk<br />
                         make javalib
                     </p>
@@ -239,9 +243,14 @@
                     <h3>
                         Running</h3>
                     <p>
-                        Launch the server with a specified configuration file:
+                        Launch a Controller with a specified configuration file:
                         <p class="code">
-                            ./bin/scaliendb test/control/single/scaliendb.conf</p>
+                            ./bin/scaliendb test/control/single/scaliendb.conf
+                        </p>
+                        Launch a Shard Server with a specified configuration file:
+                        <p class="code">
+                            ./bin/scaliendb test/shard/0/scaliendb.conf
+                        </p>
                         <p>
                             Once the server is up running, connect to <strong>http://localhost:8080/webadmin</strong>
                             to see the Standard Management Console.</p>
