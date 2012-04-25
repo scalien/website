@@ -208,9 +208,7 @@
         -->
             <div class="column-container">
                 <div class="column">
-                    <h3>
-                        Building
-                    </h3>
+                    <h3>Building</h3>
                     <p>
                         On <strong>Linux</strong>, download and extract the zip file or <span class="highlight">
                         get the source from Github</span>:
@@ -225,13 +223,17 @@
                         cd scaliendb<br />
                         make<br />
                         <br/ >
+                        <span style="color:gray">
                         # optional: install Python library<br />
                         # requires python-devel<br />
+                        </span>
                         sudo apt-get install python-dev<br />
                         make pythonlib<br />
                         <br/ >
+                        <span style="color:gray">
                         # optional: install Java library<br />
-                        # requires JDK (not just JRE)<br />
+                        # requires JDK<br />
+                        </span>
                         sudo apt-get install sun-java6-jdk<br />
                         make javalib
                     </p>
@@ -240,23 +242,27 @@
                     </p>
                 </div>
                 <div class="column">
-                    <h3>
-                        Running</h3>
+                    <h3>Running</h3>
                     <p>
                         Launch a Controller with a specified configuration file:
-                        <p class="code">
-                            ./bin/scaliendb test/control/single/scaliendb.conf
-                        </p>
+                    </p>
+                    <p class="code">
+                        ./bin/scaliendb test/control/single/scaliendb.conf
+                    </p>
+                    <p>
                         Launch a Shard Server with a specified configuration file:
-                        <p class="code">
-                            ./bin/scaliendb test/shard/0/scaliendb.conf
-                        </p>
-                        <p>
-                            Once the server is up running, connect to <strong>http://localhost:8080/webadmin</strong>
-                            to see the Standard Management Console.</p>
-                        <p>
-                            Don't forget to check out the
-                            <a class="hl" href="https://github.com/scalien/scaliendb/wiki">Documentation</a>.</p>
+                    </p>
+                    <p class="code">
+                        ./bin/scaliendb test/shard/0/scaliendb.conf
+                    </p>
+                    <p>
+                        Once the server is up running, connect to <strong>http://localhost:8080/webadmin</strong>
+                        to see the Standard Management Console.
+                    </p>
+                    <p>
+                        Don't forget to check out the
+                        <a class="hl" href="https://github.com/scalien/scaliendb/wiki">Documentation</a>.
+                    </p>
                 </div>
                 <div class="clear">
                 </div>
