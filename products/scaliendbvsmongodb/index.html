@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Scalien" />
+    <meta name="author" content="Scalien" />
+    <base href="http://scalien.com/" />
+    <title>ScalienDB vs MongoDB - Transactional NoSQL</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/inner.css" />
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="products">
+    <div class="header inner-page">
+        <div class="wrap">
+            <a href="/">
+                <img class="logo" src="assets/images/header_logo.png" alt="Scalien - Transactional NoSQL" /></a>
+            <!-- Mainmenu -->
+            <div class="menu">
+                <div class="broken-line">
+                </div>
+                <nav id="mainmenu">
+						<ul>
+                            <li class="item">
+								<span class="mbl"></span>
+								<a target="_self" href="products">Products</a>
+								<span class="mbr"></span>
+								<ul id="submenu-products" class="submenu">
+									<li class="subitem"><a target="_self" href="products">ScalienDB</a></li>
+									<li class="subitem"><a target="_self" href="products/scaliendbvsmongodb">ScalienDB vs MongoDB</a></li>
+								</ul>
+							</li>
+							<li class="item">
+								<span class="mbl"></span>
+								<a target="_self" href="services">Services</a>
+								<span class="mbr"></span>
+							</li>
+							<li class="item">
+								<span class="mbl"></span>
+								<a target="_self" href="company">Company</a>
+								<span class="mbr"></span>
+							</li>
+							<li class="mid-separator">
+								&nbsp;
+							</li>
+							<li class="item">
+								<span class="mbl"></span>
+								<a target="_self" href="technology">Technology</a>
+								<span class="mbr"></span>
+								<ul id="submenu-technology" class="submenu">
+									<li class="subitem"><a target="_self" href="technology">Overview</a></li>
+									<li class="subitem"><a target="_self" href="technology/paxos">Paxos</a></li>
+									<li class="subitem"><a target="_self" href="technology/whitepapers">Whitepapers</a></li>
+								</ul>
+							</li>
+							<li class="item">
+								<span class="mbl"></span>
+								<a target="_self" href="http://blog.scalien.com">Blog</a>
+								<span class="mbr"></span>
+							</li>
+                            <li class="item">
+								<span class="mbl"></span>
+								<a target="_self" href="downloads">Downloads</a>
+								<span class="mbr"></span>
+							</li>
+						</ul>
+					</nav>
+                <div class="broken-line">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner-content">
+        <div class="wrap">
+            <h1>
+               ScalienDB vs MongoDB</h1>
+            <p class="intro">
+                The following critique is based on the MongoDB 2.0 Release Notes.<br />
+                While a leader in NoSQL, it is our observation that MongoDB 2.0,<br />
+                and many other NoSQL vendors, who claim to be ready for<br />
+                mission critical applications for business are really not.
+            </p>
+            <p class="hl">
+                Let's take a look at the key features of MongoDB based on their
+                <a href="http://www.mongodb.org/display/DOCS/2.0+Release+Notes">Release Notes</a>,
+                and compare MongoDB to ScalienDB.</p>
+            <!-- <div class="broken-line"></div> -->
+            <div class="column-container">
+                <div class="column">
+                    <h3>Transactions</h3>
+                    <p>
+                        Here at Scalien we believe transactions are a baseline requirement for a NoSQL database.
+                        Without transactions, a NoSQL database is effectively limited to be used as a cache or
+                        for storing low importance data like logs. But what do you use for storing mission-critical
+                        user data?
+                        <br /><br />
+                        MongoDB does not support transactions. What it does support is
+                        <a href="http://www.mongodb.org/display/DOCS/Atomic+Operations">atomic updates to single</a>
+                        documents, but that is not the same thing as transactions. Real world applications
+                        involve updates to several documents.
+                        <br /><br />
+                        ScalienDB fully supports ACID compliant transactions across keys, the same way an SQL database
+                        supports transactions across rows and tables.
+                    </p>
+                    <h3>Compaction</h3>
+                    <p>
+                        <a href="http://en.wikipedia.org/wiki/Data_compaction">Data compaction</a> is the reduction of the number of data elements in the database file by
+                        throwing away old versions of the data that were overwritten by a newer version. When running
+                        MongoDB in production, where lots of data is created, overwritten and deleted, MongoDB requires
+                        that the database is periodically
+                        <a href="http://www.mongodb.org/display/DOCS/compact+Command">compacted</a>.
+                        Without compaction, MongoDB eventually uses up
+                        all available disk space on the server and cannot accept new data.
+                        <br /><br />
+                        However, in MongoDB compaction blocks the database and puts it in so-called recovery mode.
+                        MongoDB cannot serve reads or writes while compaction is running. To use compaction in
+                        production, you will need to run several replicas and juggle the primary server. However,
+                        since the MongoDB client does not support failovers like ScalienDB, your application will
+                        experience problems because of this, as has been described numerous times, for example 
+                        <a href="http://stackoverflow.com/questions/8895256/mongodb-maintenance">here</a>.
+                        <br /><br />
+                        Additionally, since the MongoDB secondary performing compaction is unable to take writes, it will
+                        be left behind in the Replica Set while it's compacting, and will have to catch up,
+                        potentially causing further problems in production.
+                        <br /><br />
+                        ScalienDB uses a completely different architecture. In ScalienDB, there is no need for explicit
+                        compaction like in MongoDB. Data files in ScalienDB are automatically merged in the background,
+                        in a way that does not affect performance and does not block the database. There is no
+                        need for juggling the primary like in MongoDB, no problems are introduced to the production database. 
+                    </p>
+                    <h3>Stack size</h3>
+                    <p>
+                        This <a href="http://www.mongodb.org/display/DOCS/2.0+Release+Notes#2.0ReleaseNotes-DefaultStackSize">improvement</a>
+                        is related to the fact that MongoDB creates one thread for each client
+                        connection, as mentioned above. With a lot of client connections, you will have a lot of
+                        threads, and each thread will take up a fixed amount of memory called "stack space", eating
+                        up the server's memory. This is inherent in MongoDB's multi-threaded architecture, which
+                        is inferior to ScalienDB's asynchronous event based architecture.
+                        <br /><br />
+                        In ScalienDB, there is no need to create a new thread for each client connection.  Hence,
+                        there is no need for mucking around and understanding stack sizes, or fearing that client
+                        connections will eat up the server's memory.
+                </div>
+                <div class="column">
+                    <h3>Performance</h3>
+                    <p>
+                        As has been notes numerous times on the Internet, for example
+                        <a href="http://www.colinhowe.co.uk/2011/02/23/mongodb-performance-for-data-bigger-than-memor/">here</a>,
+                        MongoDB performance falls off a cliff
+                        if your dataset no longer fits into memory. Unfortunately, there is no word in the MongoDB
+                        Release Notes about this. We believe this problem is inherent in MongoDB's storage engine
+                        architecture and is unlikely to be fixed anytime soon.
+                        <br /><br />
+                        Unlike MongoDB, ScalienDB uses a linearized storage engine inspired by Google's Bigtable
+                        architecture and employs advanced features such as Bloom Filters. Our storage engine is a
+                        true Big Data storage engine, allowing you to easily store more data than available RAM
+                        without performance falling off a cliff.
+
+                    </p>
+                    <h3>Concurrency</h3>
+                    <p>
+                        <a href="http://www.mongodb.org/display/DOCS/How+does+concurrency+work">MongoDB uses a global write lock.</a>
+                        This means that under heavy load, as you would have in
+                        production, database writes are constantly competing for the global write lock to get their
+                        work done. MongoDB 2.0 introduces a fix which decreases this contention by having writes
+                        yield the write lock in certain cases. But this does not address the fundamental issue.
+                        The problem is that MongoDB uses one thread per client connection, and uses the global
+                        write lock to make sure these parallel threads don't cause data corruption.
+                        <br /><br />
+                        The correct architecture for dealing with 1000s of connections is asynchronous event based
+                        networking (kqueue, epoll, Completion Ports), as employed by ScalienDB, where there is no
+                        need to create a new thread for each client connection. Hence, in ScalienDB there is no
+                        global write lock and no lock contention.
+                        <br /><br />
+                        In addition, having one thread per connection also means that MongoDB will eat up the server's
+                        CPU if running with a lot of clients. In performance tests, connecting 1000s of clients caused
+                        MongoDB to eat up all the CPU and essentially stop functioning correctly.
+                        <br /><br />
+                        Since ScalienDB doesn't create additional threads, even with thousands of active client
+                        connections, its usage of CPU and memory on the server is minimal, even under heavy load.
+                    </p>
+                    <h3>Replica Sets</h3>
+                    <p>
+                        Replication is both one of the strongest and weakest points of MongoDB. Replication can be
+                        fine-tuned by being able to specify how many servers a database write should hit in the
+                        Replica Set, what Mongo refers to as a “write concern.“ Additionally, MongoDB 2.0 introduces
+                        the ability to tag both servers and writes.
+                        <br /><br />
+                        In practice, however, using this feature in a way where 2 or more servers have to be hit per
+                        write and commit the data to disk, which is a basic requirement for consistency is replication,
+                        results in a severe performance decrease in MongoDB.
+                        <br /><br />
+                        ScalienDB uses a completely different replication scheme called
+                        <a href="technology/paxos">Paxos</a>, which guarantees
+                        Immediate Consistency. With Paxos, you don't have to worry about things like MongoDB's write
+                        concerns. Using Paxos, ScalienDB guarantees that your data is always consistent and available. 
+                    </p>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="download-wide">
+                <p>
+                    Get the latest version of ScalienDB.</p>
+                <a href="downloads">
+                    <img src="assets/images/download_button.png" alt="Download" /></a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="wrap">
+                <div class="column-container">
+                    <div class="prod">
+                        <h5>Products</h5>
+                        <ul class="footer-nav upper">
+                            <li><a href="products">ScalienDB</a></li>
+                            <li><a href="downloads">Downloads</a></li>
+                            <li><a href="https://github.com/scalien/scaliendb/wiki">Documentation</a></li>
+                        </ul>
+                        <h5>Services</h5>
+                        <ul class="footer-nav">
+                            <li><a href="services">Services</a></li>
+                            <li><a href="services/fees">Support Fees</a></li>
+                        </ul>
+                    </div>
+                    <div class="tech">
+                        <h5>Technology</h5>
+                        <ul class="footer-nav upper">
+                            <li><a href="technology">Overview</a></li>
+                            <li><a href="technology/paxos">Paxos</a></li>
+                            <li><a href="technology/whitepapers">Whitepapers</a></li>
+                        </ul>
+                        <h5>Company</h5>
+                        <ul class="footer-nav">
+                            <li><a href="company">About</a></li>
+                            <li><a href="http://blog.scalien.com">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h5>Get social</h5>
+                        <div class="icons">
+                            <a href="https://twitter.com/scalien"><img src="assets/images/social_tw.png" alt="Twitter" /></a>
+                            <a href="https://www.facebook.com/pages/Scalien/236462826418221"><img src="assets/images/social_fb.png" alt="Facebook" /></a>
+                            <a href="http://blog.scalien.com"><img src="assets/images/social_bl.png" alt="Blog" /></a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h5>Contact</h5>
+                        <form action="mail.php" method="post" enctype="text/plain" target="_blank">
+                            <div class="contact-form">
+                                <div class="col-left">
+                                    <input type="text" placeholder="Name" name="Name" />
+                                    <input type="email" placeholder="Email" name="Email" />
+                                </div>
+                                <div class="col-right">
+                                    <textarea placeholder="Message" name="Message"></textarea>
+                                    <span class="button">
+                                        <span class="mbl"></span>
+                                        <a target="_self" href="#">Send</a>
+                                        <span class="mbr">
+                                    </span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="broken-line">
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2012 Scalien. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.hoverIntent.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.form.js"></script>
+    <script type="text/javascript" src="assets/js/common_func.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9801399-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

@@ -178,7 +178,7 @@ div.header div.menu nav > ul li span.mbr
 #submenu-products
 {
     top: 80px;
-    left: -1px;
+    left: -26px;
     height: 73px;
     background: url('../images/submenu-products.png') no-repeat left 2px;
 }
@@ -670,11 +670,6 @@ div.references img.last
     margin-right: 0px;
 }
 
-#submenu-products
-{
-    display: none !important;
-    visibility: hidden !important;
-}
 #landing .footer
 {
     margin-top: 0;
