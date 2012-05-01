@@ -701,3 +701,11 @@ span.highlight
 {
     /*background-color: #fce39f;*/
 }
+
+img.products-thumbnail
+{
+    float: left;
+    width: 70px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
